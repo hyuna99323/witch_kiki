@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="../css/src/kiki.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
 
     <!-- Google Analytics -->
     <script>
@@ -36,35 +35,56 @@
   <div id="wrap">
     <header id="headBox">
       <div class="headinner">
+        <nav class="gnb">
+          
+        </nav>
         <h1>
           <a href="./kiki.html">
             <img src="../img/logo_white.png" alt="">
           </a>
         </h1>
+        <div class="site_rink">
+          <div class="rink_img">
+            <div class="ghiblie_site">
+              <img src="../img/ghibli_studio_logo.png" alt="">
+            </div>
+            <div class="twitter_site">
+              <img src="../img/twitter_logo.png" alt="">
+            </div>
+          </div>
+          <div class="site_txt">
+            <span>ghibli studio</span>
+          </div>
+        </div>
       </div>
-      <nav class="gnb">
-
-      </nav>
+      <section id="cover">
+        <h2 class="blind">커버사진</h2>
+        <img src="../img/kiki_cover.jpeg" alt="">
+      </section>
     </header>
 
     <!-- #plot -->
     <section id="plot">
       <h2 class="blind">줄거리</h2>
-      <div class="leftImg">
-        <img src="" alt="">
+      <div class="plot_top">
+        <div class="leftImg"></div>
+        <div class="rightTxt"></div>
       </div>
-      <div class="rightTxt"></div>
-      <div class="rightImg">
-        <img src="" alt="">
+      <div class="plot_bottom">
+        <div class="leftTxt"></div>
+        <div class="rightImg"></div>
       </div>
-      <div class="leftTxt"></div>
     </section>
 
     <!-- #video -->
     <section id="video">
       <h2 class="blind">마녀배달부키키 메인티저</h2>
-      <div class="video_content"></div>
-      <div class="video_title"></div>
+      <div class="video_content">
+        <iframe width="920" height="492" src="https://www.youtube.com/embed/zbvx7pqw5Gg?si=00winPDYIW9zth0t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="video_title">
+        <span>메인 예고편 보러가기</span>
+      </div>
       <div class="video_decoration"></div>
     </section>
 
@@ -77,87 +97,135 @@
     <!-- #gellery -->
     <section id="gellery">
       <h2>gallery</h2>
-      <div class="main_img">
+      <!-- <div class="main_img">
         <img src="" alt="">
-      </div>
+      </div> -->
       <div class="mini_img">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="../img/kiki_zizi.jpeg" alt="">
+        <img src="../img/kiki_zizi.jpeg" alt="">
+        <img src="../img/kiki_zizi.jpeg" alt="">
+        <img src="../img/kiki_zizi.jpeg" alt="">
+        <img src="../img/kiki_zizi.jpeg" alt="">
+        <img src="../img/kiki_zizi.jpeg" alt="">
+        <img src="../img/kiki_zizi.jpeg" alt="">
+        <img src="../img/kiki_zizi.jpeg" alt="">
       </div>
     </section>
 
     <!-- #poster -->
     <section id="poster">
       <h2>poster</h2>
-      <div class="subPoster">
-        <div class="countryJp">
-          <h3>japan ver</h3>
+      <div class="poster_container">
+        <div class="subPoster">
+          <div class="subPoster_subTilte">
+            <div class="countryJp">
+              <h3>Japan ver</h3>
+            </div>
+            <div class="countryKo">
+              <h3>Korea ver</h3>
+            </div>
+          </div>
+          <div class="subPoster_top">
+            <div class="brawn_posterJp">
+              <img src="../img/" alt="">
+            </div>
+            <div class="brawn_posterKo"></div>
+          </div>
+          <div class="subPoster_bottom">
+            <div class="retro_posterJp"></div>
+            <div class="retro_posterKo"></div>
+          </div>
         </div>
-        <div class="countryKo">
-          <h3>korea ver</h3>
-        </div>
-        <div class="brawn_posterJp"></div>
-        <div class="brawn_posterKo"></div>
-        <div class="retro_posterJp"></div>
-        <div class="retro_posterJp"></div>
+        <div class="mainPoster"></div>
       </div>
-      <div class="mainPoster"></div>
     </section>
 
     <!-- #famousLine -->
-    <setion id="famousLine">
+    <section id="famousLine">
       <h2 class="blind">명대사</h2>
       <div class="famous_kiki"></div>
-      <span>"키키, 너무 겉모습에만 신경쓰지 마라 중요한건 마음가짐이야<br />
-        그리고 항상 웃는 얼굴 잊지 말고"
-      </span>
-      <span>- 극중 키키의 엄마 고키리 -</span>
+      <div class="dialogue">
+        <span>"키키, 너무 겉모습에만 신경쓰지 마라 중요한건 마음가짐이야<br />
+          그리고 항상 웃는 얼굴 잊지 말고"
+        </span>
+        <span>- 극중 키키의 엄마 고키리 -</span>
+      </div>
       <div class="famous_parents"></div>
-    </setion>
+    </section>
 
     <!-- #recommend -->
     <section id="recommend">
       <h2>recommened movie</h2>
       <div class="production">
-        <div class="ghilie"></div>
-        <div class="hayaho"></div>
+        <div class="ghilie">
+          <img src="../img/ghibli_studio.svg" alt="">
+        </div>
+        <div class="hayaho">
+          <span>미야자키 하야오作</span>
+        </div>
       </div>
-      <div class="movie1">
-        <div class="recom_poster"></div>
-        <div class="movie_title"></div>
-      </div>
-      <div class="movie2">
-        <div class="recom_poster"></div>
-        <div class="movie_title"></div>
-      </div>
-      <div class="movie3">
-        <div class="recom_poster"></div>
-        <div class="movie_title"></div>
-      </div>
-      <div class="movie4">
-        <div class="recom_poster"></div>
-        <div class="movie_title"></div>
+      <div class="movie_contanier">
+        <div class="movie">
+          <div class="recom_poster">
+            <img src="../img/2023poster.jpeg" alt="">
+          </div>
+          <div class="movie_title">
+            <p>그대들은 어떻게 살 것인가</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="recom_poster">
+            <img src="../img/2007poster.jpeg" alt="">
+          </div>
+          <div class="movie_title">
+            <p>센과 치히로의 행방불명</p>
+            <p>2007</p>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="recom_poster">
+            <img src="../img/2003poster.jpeg" alt="">
+          </div>
+          <div class="movie_title">
+            <p>모노노케 히메</p>
+            <p>2003</p>
+          </div>
+        </div>
+        <div class="movie">
+          <div class="recom_poster">
+            <img src="../img/2001poster.jpeg" alt="">
+          </div>
+          <div class="movie_title">
+            <p>이웃집 토토로</p>
+            <p>2001</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- #ending -->
     <section id="ending">
-      <h2 class="enjoy">enjoy in here!</h2>
+      <h2 class="enjoy">ENJOY in HERE!</h2>
       <div class="prodce">
-        <div class="ghilieImg"></div>
-        <div class="dawonImg"></div>
+        <div class="ghilieImg">
+          <img src="../img/ghibli_studio.svg" alt="">
+        </div>
+        <div class="dawonImg">
+          <img src="../img/daewon_media.svg" alt="">
+        </div>
       </div>
       <div class="ott">
-        <div class="netflix"></div>
-        <div class="wavve"></div>
+        <div class="netflix">
+          <img src="../img/netflex_logo.png" alt="">
+        </div>
+        <div class="wavve">
+          <img src="../img/wavve_logo.png" alt="">
+        </div>
       </div>
-      <div class="familly"></div>
+      <div class="familly">
+        <img src="../img/kiki_bye.png" alt="">
+      </div>
     </section>
   </div>
 

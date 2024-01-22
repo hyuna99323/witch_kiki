@@ -1,0 +1,450 @@
+// portfolio2.scss
+/* portfolio2.css */
+
+@import "../common/variable";
+@import "../common/mixin";
+
+/* fonts.css */
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+  @font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  /* 전체 레이아웃 설정 */
+#wrap {
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  margin: auto;
+  background-color: $color_white;
+  // padding: 0 100px;
+  font-family: "S-Core_Dream_OTF";
+  font-weight: 300;
+
+  #headBox {
+    width: 100%;
+    height: 100vh;
+    // position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 1000;
+
+    .headinner {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      position: absolute;
+      padding: 13px 100px;
+
+      .gnb {
+        width: 33.3%;
+      }
+
+      h1 {
+        width: 33.3%;
+
+        a {
+          display: flex;
+          margin: auto;
+          justify-content: center;
+
+          img {
+            width: 227px;
+            height: 43px;
+          }
+        }
+      }
+    }
+
+    .site_rink {
+      width: 33.3%;
+      display: grid;
+      justify-content: end;
+
+      .rink_img {
+        display: flex;
+        justify-content: end;
+
+        .ghiblie_site {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          
+          img {
+            width: 21px;
+            height: 22px;
+            margin: auto;
+          }
+        }
+        .twitter_site {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          
+          img {
+            width: 21px;
+            height: 21px;
+          }
+        }
+      }
+      .site_txt {
+          height: 15px;
+          line-height: 15px;
+
+        span {
+          color: $color_white;
+          font-size: map-get($map: $font_size, $key: subTxt);
+          text-transform: capitalize;
+        }
+      }
+    }
+
+
+  }
+  #cover {
+    img {
+      width: 100%;
+      height: 100vh;
+    }
+  }
+
+  #plot {
+    height: 100vh;
+    
+    .plot_top {
+      display: flex;
+      width: 100%;
+      height: 50vh;
+
+      .leftImg {
+        width: 50%;
+        height: 100%;
+        background-image: url(../../img/kiki_green.jpeg);
+        background-size: 100% 1000px;
+        background-repeat: no-repeat;
+        background-position: 0px -400px;
+      }
+      .rightTxt {
+        width: 50%;
+        height: 100%;
+        background-color: $color_green;
+      }
+    }
+    .plot_bottom {
+      display: flex;
+      width: 100%;
+      height: 50vh;
+
+      .leftTxt {
+        width: 50%;
+        height: 100%;
+        background-color: $color_blue;
+      }
+      .rightImg {
+        width: 50%;
+        height: 100%;
+        background-image: url(../../img/kiki_blue.jpeg);
+        background-size: 100% 1000px;
+        background-repeat: no-repeat;
+        background-position: 0px -600px;
+      }
+    }
+  }
+
+  #video {
+    height: 100vh;
+    padding: 120px 0;
+    background-color: $color_whiteGraly;
+
+    .video_content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .video_title {
+      width: 100%;
+      height: 51px;
+      line-height: 51px;
+      font-size: map-get($map: $font_size, $key: projectsub);
+      font-weight: $font_weight_medium;
+      text-align: center;
+    }
+    .video_decoration {
+      width: 288px;
+      height: 337px;
+      bottom: 300px;
+      left: 1038px;
+      position: relative;
+      background-image: url(../../img/zizi_deco.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  #character {
+    @include sectionBasic();
+    background-color: $color_baige;
+
+    h2 {
+      @include h2();
+      height: 32px;
+    }
+  }
+
+  #gellery {
+    @include sectionBasic();
+    background-image: url(../../img/kiki_together.jpeg);
+    
+    h2 {
+      @include h2();
+      height: 37px;
+      color: $color_white;
+    }
+    // .main_img {
+    //   img {}
+    // }
+    .mini_img { // 임시코드로 자바스크립트 활용예정
+      display: flex;
+      width: 84px;
+      height: 84px;
+      gap: 26px;
+      top: 3800px;
+      left: 20%;
+      position: absolute;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  #poster {
+    @include sectionBasic();
+
+    h2 {
+      @include h2();
+    }
+    .poster_container {
+      display: flex;
+    }
+    .subPoster {
+      display: flex;
+      width: 50%;
+      padding: 56px 150px;
+
+      .subPoster_subTilte {
+        display: flex;
+        width: 100%;
+
+        h3 {
+          font-size: map-get($map: $font_size, $key: subtitle);
+          font-weight: $font_weight_regular;
+        }
+        .countryJp {
+          width: 50%;
+          text-align: center;
+
+        }
+        .countryKo {
+          width: 50%;
+          text-align: center;
+        }
+      }
+      .subPoster_top {
+        .brawn_posterJp {}
+        .brawn_posterKo {}
+      }
+      .subPoster_bottom {
+        .retro_posterJp {}
+        .retro_posterKo {}
+      }
+    }
+    .mainPoster {
+      width: 50%;
+    }
+  }
+
+  #famousLine {
+    height: 320px;
+    display: flex;
+    background-color: $color_black;
+    
+    
+    .famous_kiki {
+      width: 320px;
+      height: 320px;
+      background-image: url(../../img/famous_kiki.png);
+      background-size: 100% 100%;
+    }
+    .dialogue {
+      width: 55.5%;
+      padding: 93px 0;
+
+      span {
+        font-family: 'Y_Spotlight';
+        width: 100%;
+        display: block;
+        color: $color_white;
+        font-size: map-get($map: $font_size, $key: dialogue);
+        text-align: center;
+      }
+    }
+    span:last-child {
+      margin-top: 22px;
+    }
+    .famous_parents {
+      width: 320px;
+      height: 318px;
+      background-image: url(../../img//famous_momfam.png);
+      background-size: 100% 100%;
+    }
+  }
+
+  #recommend {
+    @include sectionBasic();
+    padding: 140px;
+    background-color: $color_puple;
+
+    h2 {
+      @include h2();
+      text-transform: capitalize;
+      color: $color_white;
+    }
+    .production {
+      display: flex;
+      margin-top: 8px;
+      justify-content: center;
+      gap: 30px;
+
+      .ghilie {
+
+        img {
+          width: 103px;
+          height: 48px;
+        }
+      }
+      .hayaho {
+        display: block;
+        
+        span {
+          height: 54px;
+          line-height: 89px;
+          display: block;
+          font-size: map-get($map: $font_size, $key: subtitle);
+          color: $color_white;
+        }
+      }
+    }
+    .movie_contanier {
+      height: auto;
+      display: flex;
+      gap: 80px;
+      margin-top: 70px;
+
+      .movie {
+        height: auto;
+
+        .recom_poster {
+          width: 230px;
+          height: 302px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .movie_title {
+          margin-top: 15px;
+
+          p {
+            font-size: map-get($map: $font_size, $key: subtitle);
+            font-weight: $font_weight_bold;
+            color: $color_white;
+          }
+          p:last-child {
+            margin-top: 5px;
+            font-size: map-get($map: $font_size, $key: content1);
+            font-weight: $font_weight_regular;
+          }
+        }
+      }
+    }
+  }
+
+  #ending {
+    @include sectionBasic ();
+    .enjoy {
+      width: 100%;
+      text-align: center;
+      font-size: map-get($map: $font_size, $key: endding);
+      color: $color_red;
+    }
+    .prodce {
+      display: flex;
+      margin-top: 54px;
+      justify-content: center;
+      gap: 100px;
+
+      .ghilieImg {
+        img {
+          width: 198px;
+          height: 95px;
+        }
+      }
+      .dawonImg {
+        padding-top: 56px;
+      }
+    }
+    .ott {
+      display: flex;
+      margin-top: 110px;
+      justify-content: center;
+      gap: 95px;
+
+      .netflix {
+        // width: 134px;
+        // height: auto;
+
+        img {
+          width: 134px;
+          height: auto;
+        }
+      }
+      .wavve {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 131px;
+          height: 27px;
+          margin: auto;
+        }
+      }
+    }
+    .familly {
+      position: relative;
+      width: 594px;
+      height: 316px;
+      overflow: hidden;
+      bottom: 58px;
+      left: 746px;
+
+      img {
+        position: absolute;
+        width: 600px;
+        height: auto;
+        top: 20px;
+        left: 25px;
+      }
+    }
+  }
+}

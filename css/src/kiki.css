@@ -1,0 +1,467 @@
+@charset "UTF-8";
+/* portfolio2.css */
+/* fonts.css */
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Y_Spotlight';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 전체 레이아웃 설정 */
+#wrap {
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  margin: auto;
+  background-color: #fff;
+  font-family: "S-Core_Dream_OTF";
+  font-weight: 300;
+}
+
+#wrap #headBox {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+#wrap #headBox .headinner {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  padding: 13px 100px;
+}
+
+#wrap #headBox .headinner .gnb {
+  width: 33.3%;
+}
+
+#wrap #headBox .headinner h1 {
+  width: 33.3%;
+}
+
+#wrap #headBox .headinner h1 a {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+#wrap #headBox .headinner h1 a img {
+  width: 227px;
+  height: 43px;
+}
+
+#wrap #headBox .site_rink {
+  width: 33.3%;
+  display: grid;
+  justify-content: end;
+}
+
+#wrap #headBox .site_rink .rink_img {
+  display: flex;
+  justify-content: end;
+}
+
+#wrap #headBox .site_rink .rink_img .ghiblie_site {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#wrap #headBox .site_rink .rink_img .ghiblie_site img {
+  width: 21px;
+  height: 22px;
+  margin: auto;
+}
+
+#wrap #headBox .site_rink .rink_img .twitter_site {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#wrap #headBox .site_rink .rink_img .twitter_site img {
+  width: 21px;
+  height: 21px;
+}
+
+#wrap #headBox .site_rink .site_txt {
+  height: 15px;
+  line-height: 15px;
+}
+
+#wrap #headBox .site_rink .site_txt span {
+  color: #fff;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+#wrap #cover img {
+  width: 100%;
+  height: 100vh;
+}
+
+#wrap #plot {
+  height: 100vh;
+}
+
+#wrap #plot .plot_top {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+}
+
+#wrap #plot .plot_top .leftImg {
+  width: 50%;
+  height: 100%;
+  background-image: url(../../img/kiki_green.jpeg);
+  background-size: 100% 1000px;
+  background-repeat: no-repeat;
+  background-position: 0px -400px;
+}
+
+#wrap #plot .plot_top .rightTxt {
+  width: 50%;
+  height: 100%;
+  background-color: #0A4B41;
+}
+
+#wrap #plot .plot_bottom {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+}
+
+#wrap #plot .plot_bottom .leftTxt {
+  width: 50%;
+  height: 100%;
+  background-color: #1145A2;
+}
+
+#wrap #plot .plot_bottom .rightImg {
+  width: 50%;
+  height: 100%;
+  background-image: url(../../img/kiki_blue.jpeg);
+  background-size: 100% 1000px;
+  background-repeat: no-repeat;
+  background-position: 0px -600px;
+}
+
+#wrap #video {
+  height: 100vh;
+  padding: 120px 0;
+  background-color: #eee;
+}
+
+#wrap #video .video_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#wrap #video .video_title {
+  width: 100%;
+  height: 51px;
+  line-height: 51px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#wrap #video .video_decoration {
+  width: 288px;
+  height: 337px;
+  bottom: 300px;
+  left: 1038px;
+  position: relative;
+  background-image: url(../../img/zizi_deco.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#wrap #character {
+  height: 100vh;
+  padding: 60px 100px;
+  background-color: #D7DAC7;
+}
+
+#wrap #character h2 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  height: 32px;
+}
+
+#wrap #gellery {
+  height: 100vh;
+  padding: 60px 100px;
+  background-image: url(../../img/kiki_together.jpeg);
+}
+
+#wrap #gellery h2 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  height: 37px;
+  color: #fff;
+}
+
+#wrap #gellery .mini_img {
+  display: flex;
+  width: 84px;
+  height: 84px;
+  gap: 26px;
+  top: 3800px;
+  left: 20%;
+  position: absolute;
+}
+
+#wrap #gellery .mini_img img {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #poster {
+  height: 100vh;
+  padding: 60px 100px;
+}
+
+#wrap #poster h2 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#wrap #poster .poster_container {
+  display: flex;
+}
+
+#wrap #poster .subPoster {
+  display: flex;
+  width: 50%;
+  padding: 56px 150px;
+}
+
+#wrap #poster .subPoster .subPoster_subTilte {
+  display: flex;
+  width: 100%;
+}
+
+#wrap #poster .subPoster .subPoster_subTilte h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#wrap #poster .subPoster .subPoster_subTilte .countryJp {
+  width: 50%;
+  text-align: center;
+}
+
+#wrap #poster .subPoster .subPoster_subTilte .countryKo {
+  width: 50%;
+  text-align: center;
+}
+
+#wrap #poster .mainPoster {
+  width: 50%;
+}
+
+#wrap #famousLine {
+  height: 320px;
+  display: flex;
+  background-color: #000;
+}
+
+#wrap #famousLine .famous_kiki {
+  width: 320px;
+  height: 320px;
+  background-image: url(../../img/famous_kiki.png);
+  background-size: 100% 100%;
+}
+
+#wrap #famousLine .dialogue {
+  width: 55.5%;
+  padding: 93px 0;
+}
+
+#wrap #famousLine .dialogue span {
+  font-family: 'Y_Spotlight';
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+}
+
+#wrap #famousLine span:last-child {
+  margin-top: 22px;
+}
+
+#wrap #famousLine .famous_parents {
+  width: 320px;
+  height: 318px;
+  background-image: url(../../img//famous_momfam.png);
+  background-size: 100% 100%;
+}
+
+#wrap #recommend {
+  height: 100vh;
+  padding: 60px 100px;
+  padding: 140px;
+  background-color: #4F4259;
+}
+
+#wrap #recommend h2 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+#wrap #recommend .production {
+  display: flex;
+  margin-top: 8px;
+  justify-content: center;
+  gap: 30px;
+}
+
+#wrap #recommend .production .ghilie img {
+  width: 103px;
+  height: 48px;
+}
+
+#wrap #recommend .production .hayaho {
+  display: block;
+}
+
+#wrap #recommend .production .hayaho span {
+  height: 54px;
+  line-height: 89px;
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+#wrap #recommend .movie_contanier {
+  height: auto;
+  display: flex;
+  gap: 80px;
+  margin-top: 70px;
+}
+
+#wrap #recommend .movie_contanier .movie {
+  height: auto;
+}
+
+#wrap #recommend .movie_contanier .movie .recom_poster {
+  width: 230px;
+  height: 302px;
+}
+
+#wrap #recommend .movie_contanier .movie .recom_poster img {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #recommend .movie_contanier .movie .movie_title {
+  margin-top: 15px;
+}
+
+#wrap #recommend .movie_contanier .movie .movie_title p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#wrap #recommend .movie_contanier .movie .movie_title p:last-child {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#wrap #ending {
+  height: 100vh;
+  padding: 60px 100px;
+}
+
+#wrap #ending .enjoy {
+  width: 100%;
+  text-align: center;
+  font-size: 96px;
+  color: #D71E15;
+}
+
+#wrap #ending .prodce {
+  display: flex;
+  margin-top: 54px;
+  justify-content: center;
+  gap: 100px;
+}
+
+#wrap #ending .prodce .ghilieImg img {
+  width: 198px;
+  height: 95px;
+}
+
+#wrap #ending .prodce .dawonImg {
+  padding-top: 56px;
+}
+
+#wrap #ending .ott {
+  display: flex;
+  margin-top: 110px;
+  justify-content: center;
+  gap: 95px;
+}
+
+#wrap #ending .ott .netflix img {
+  width: 134px;
+  height: auto;
+}
+
+#wrap #ending .ott .wavve {
+  display: flex;
+  justify-content: center;
+}
+
+#wrap #ending .ott .wavve img {
+  width: 131px;
+  height: 27px;
+  margin: auto;
+}
+
+#wrap #ending .familly {
+  position: relative;
+  width: 594px;
+  height: 316px;
+  overflow: hidden;
+  bottom: 58px;
+  left: 746px;
+}
+
+#wrap #ending .familly img {
+  position: absolute;
+  width: 600px;
+  height: auto;
+  top: 20px;
+  left: 25px;
+}
