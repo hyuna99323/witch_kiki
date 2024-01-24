@@ -151,10 +151,10 @@
       .rightImg {
         width: 50%;
         height: 100%;
-        background-image: url(../../img/kiki_blue.jpeg);
-        background-size: 100% 1000px;
+        background-image: url(../../img/kiki_plot_blue.jpeg);
+        background-size: 100% 1200px;
         background-repeat: no-repeat;
-        background-position: 0px -600px;
+        background-position: 0px -380px;
       }
     }
   }
@@ -197,11 +197,82 @@
       @include h2();
       height: 32px;
     }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      width: 488px;
+      height: 606px;
+      background-color: #fff;
+      margin: 30px 15px 0;
+      padding: 26px 20px;
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: block;
+      
+      .character_img {
+        width: 354px;
+        height: 296px;
+        margin: auto;
+        
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .character_txt {
+        width: auto;
+        margin: 20px auto 0;
+
+        p {
+          margin-bottom: 10px;
+          font-size: map-get($map: $font_size, $key: subtitle);
+          font-weight: $font_weight_bold;
+        }
+        span {
+          margin-top: 10px;
+          font-size: map-get($map: $font_size, $key: content1);
+        }
+      }
+    }
+    .swiper-slide:first-child {
+      margin: 30px 15px 0px 70px;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 300px;
+      margin: 20px auto;
+    }
+
+    .append-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .append-buttons button {
+      display: inline-block;
+      cursor: pointer;
+      border: 1px solid #007aff;
+      color: #007aff;
+      text-decoration: none;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin: 0 10px;
+      font-size: 13px;
+    }
   }
 
   #gellery {
     @include sectionBasic();
-    background-image: url(../../img/kiki_together.jpeg);
+    background-image: url(../../img/kiki_gullery.jpeg);
+    background-size: 100% 100%;
     
     h2 {
       @include h2();

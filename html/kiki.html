@@ -6,13 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="../js/common/modernizr-custom.js"></script>
-
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
   <link rel="stylesheet" href="../css/src/kiki.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- swiper jQuery -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
 
     <!-- Google Analytics -->
     <script>
@@ -92,6 +94,81 @@
     <section id="character">
       <h2>character</h2>
 
+      <div #swiperRef="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- 큰 div 필요 -->
+            <div class="character_img">
+              <img src="../img/kiki.jpeg" alt="" />
+            </div>
+            <div class="character_txt">
+              <p>키키 Kiki</p>
+              <span>
+                이 영화의 주인공! 키키다 마녀는 일정 나이가 되면 마을을 떠나
+                새로운 마을에서 살아가야 하는데 키키의 마을 정착기를
+                기대해주세요.
+              </span>
+            </div>
+          </div>
+  
+          <!-- 지지 인물소개 슬라이드 -->
+          <div class="swiper-slide">
+            <div class="character_img">
+              <img src="../img/kiki_zizi.jpeg" alt="" />
+            </div>
+            <div class="character_txt">
+              <p>지지 Zizi</p>
+              <span></span>
+            </div>
+          </div>
+  
+          <!-- 톰보 인물소개 슬라이드 -->
+          <div class="swiper-slide">
+            <div class="character_img">
+              <img src="../img/kiki_tombo.png" alt="" />
+            </div>
+            <div class="character_txt">
+              <p>톰보 Tombo</p>
+              <span></span>
+            </div>
+          </div>
+  
+          <!-- 우르슬라 인물소개 슬라이드 -->
+          <div class="swiper-slide">
+            <div class="character_img">
+              <img src="../img/kiki_wuruseolra.jpeg" alt="" />
+            </div>
+            <div class="character_txt">
+              <p>우르슬라 Ursla</p>
+              <span></span>
+            </div>
+          </div>
+  
+          <!-- 고키리 인물소개 슬라이드 -->
+          <div class="swiper-slide">
+            <div class="character_img">
+              <img src="../img/kiki_mom.jpeg" alt="" />
+            </div>
+            <div class="character_txt">
+              <p>고키리 Kokiri</p>
+              <span></span>
+            </div>
+          </div>
+  
+          <!-- 오키노 인물소개 슬라이드 -->
+          <div class="swiper-slide">
+            <div class="character_img">
+              <img src="../img/kikifather.jpeg" alt="" />
+            </div>
+            <div class="character_txt">
+              <p>오키노 Okino</p>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </section>
 
     <!-- #gellery -->
@@ -230,7 +307,8 @@
   </div>
 
   <!-- script -->
-  <script></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/character_slider.js"></script>
   
 </body>
 </html>
