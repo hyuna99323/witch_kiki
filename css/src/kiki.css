@@ -31,19 +31,24 @@
   height: 100vh;
   top: 0;
   box-sizing: border-box;
-  z-index: 1000;
 }
 
 #wrap #headBox .headinner {
   width: 100%;
   height: 70px;
   display: flex;
-  position: absolute;
+  position: fixed;
   padding: 13px 100px;
+  z-index: 1000;
 }
 
 #wrap #headBox .headinner .gnb {
   width: 33.3%;
+}
+
+#wrap #headBox .headinner .gnb i {
+  font-size: 30px;
+  color: #fff;
 }
 
 #wrap #headBox .headinner h1 {
@@ -113,44 +118,44 @@
 
 #wrap #plot {
   height: 100vh;
-}
-
-#wrap #plot .plot_top {
   display: flex;
-  width: 100%;
-  height: 50vh;
+  flex-wrap: wrap;
 }
 
-#wrap #plot .plot_top .leftImg {
+#wrap #plot .leftImg {
   width: 50%;
-  height: 100%;
   background-image: url(../../img/kiki_green.jpeg);
   background-size: 100% 1000px;
   background-repeat: no-repeat;
   background-position: 0px -400px;
 }
 
-#wrap #plot .plot_top .rightTxt {
+#wrap #plot .rightTxt {
   width: 50%;
-  height: 100%;
   background-color: #0A4B41;
+  padding: 77px;
 }
 
-#wrap #plot .plot_bottom {
-  display: flex;
-  width: 100%;
-  height: 50vh;
+#wrap #plot .rightTxt p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
 }
 
-#wrap #plot .plot_bottom .leftTxt {
+#wrap #plot .leftTxt {
   width: 50%;
-  height: 100%;
   background-color: #1145A2;
+  padding: 67px;
 }
 
-#wrap #plot .plot_bottom .rightImg {
+#wrap #plot .leftTxt p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+}
+
+#wrap #plot .rightImg {
   width: 50%;
-  height: 100%;
   background-image: url(../../img/kiki_plot_blue.jpeg);
   background-size: 100% 1200px;
   background-repeat: no-repeat;
@@ -276,6 +281,10 @@
   border-radius: 4px;
   margin: 0 10px;
   font-size: 13px;
+}
+
+#wrap #character .swiper-button-next, #wrap #character .swiper-button-prev {
+  color: #D71E15;
 }
 
 #wrap #gellery {
@@ -476,6 +485,8 @@
 #wrap #ending {
   height: 100vh;
   padding: 60px 100px;
+  padding: 59px 100px;
+  background-color: #004;
 }
 
 #wrap #ending .enjoy {
@@ -508,7 +519,11 @@
   gap: 95px;
 }
 
-#wrap #ending .ott .netflix img {
+#wrap #ending .ott .netflix a {
+  display: inline-flex;
+}
+
+#wrap #ending .ott .netflix a img {
   width: 134px;
   height: auto;
 }
@@ -518,7 +533,11 @@
   justify-content: center;
 }
 
-#wrap #ending .ott .wavve img {
+#wrap #ending .ott .wavve a {
+  display: inline-flex;
+}
+
+#wrap #ending .ott .wavve a img {
   width: 131px;
   height: 27px;
   margin: auto;

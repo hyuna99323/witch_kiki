@@ -32,20 +32,25 @@
   #headBox {
     width: 100%;
     height: 100vh;
-    // position: sticky;
     top: 0;
     box-sizing: border-box;
-    z-index: 1000;
 
     .headinner {
       width: 100%;
       height: 70px;
       display: flex;
-      position: absolute;
+      position: fixed;
       padding: 13px 100px;
+      z-index: 1000;
+
 
       .gnb {
         width: 33.3%;
+
+        i {
+          font-size: 30px;
+          color: $color_white;
+        }
       }
 
       h1 {
@@ -118,44 +123,50 @@
 
   #plot {
     height: 100vh;
-    
-    .plot_top {
-      display: flex;
-      width: 100%;
-      height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
 
-      .leftImg {
-        width: 50%;
-        height: 100%;
-        background-image: url(../../img/kiki_green.jpeg);
-        background-size: 100% 1000px;
-        background-repeat: no-repeat;
-        background-position: 0px -400px;
-      }
-      .rightTxt {
-        width: 50%;
-        height: 100%;
-        background-color: $color_green;
+    .leftImg {
+      width: 50%;
+      // height: 100%;
+      background-image: url(../../img/kiki_green.jpeg);
+      background-size: 100% 1000px;
+      background-repeat: no-repeat;
+      background-position: 0px -400px;
+    }
+    
+    .rightTxt {
+      width: 50%;
+      // height: 100%;
+      background-color: $color_green;
+      padding: 77px;
+
+      p {
+        font-size: map-get($map: $font_size, $key: subtitle);
+        color: $color_white;
+        line-height: 24px;
       }
     }
-    .plot_bottom {
-      display: flex;
-      width: 100%;
-      height: 50vh;
 
-      .leftTxt {
-        width: 50%;
-        height: 100%;
-        background-color: $color_blue;
+    .leftTxt {
+      width: 50%;
+      // height: 100%;
+      background-color: $color_blue;
+      padding: 67px;
+
+      p {
+        font-size: map-get($map: $font_size, $key: subtitle);
+        color: $color_white;
+        line-height: 24px;
       }
-      .rightImg {
-        width: 50%;
-        height: 100%;
-        background-image: url(../../img/kiki_plot_blue.jpeg);
-        background-size: 100% 1200px;
-        background-repeat: no-repeat;
-        background-position: 0px -380px;
-      }
+    }
+    .rightImg {
+      width: 50%;
+      // height: 100%;
+      background-image: url(../../img/kiki_plot_blue.jpeg);
+      background-size: 100% 1200px;
+      background-repeat: no-repeat;
+      background-position: 0px -380px;
     }
   }
 
@@ -266,6 +277,10 @@
       border-radius: 4px;
       margin: 0 10px;
       font-size: 13px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+      color: $color_red;
     }
   }
 
@@ -453,6 +468,9 @@
 
   #ending {
     @include sectionBasic ();
+    padding: 59px 100px;
+    background-color: #004;
+    
     .enjoy {
       width: 100%;
       text-align: center;
@@ -485,19 +503,28 @@
         // width: 134px;
         // height: auto;
 
-        img {
-          width: 134px;
-          height: auto;
+        a {
+          display: inline-flex;
+          
+
+          img {
+            width: 134px;
+            height: auto;
+          }
         }
       }
       .wavve {
         display: flex;
         justify-content: center;
-
-        img {
-          width: 131px;
-          height: 27px;
-          margin: auto;
+        
+        a {
+          display: inline-flex;
+          
+          img {
+            width: 131px;
+            height: 27px;
+            margin: auto;
+          }
         }
       }
     }
