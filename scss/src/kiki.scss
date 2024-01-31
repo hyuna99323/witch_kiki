@@ -17,6 +17,9 @@
     font-weight: normal;
     font-style: normal;
 }
+*{
+  cursor: url(../../img/cursor.svg) 5 5, progress;
+}
 
   /* 전체 레이아웃 설정 */
 #wrap {
@@ -28,6 +31,7 @@
   // padding: 0 100px;
   font-family: "S-Core_Dream_OTF";
   font-weight: 300;
+
 
   #headBox {
     width: 100%;
@@ -75,7 +79,9 @@
       justify-content: end;
 
       .rink_img {
+        width: 90px;
         display: flex;
+        gap: 20px;
         justify-content: end;
 
         .ghiblie_site {
@@ -84,8 +90,8 @@
           justify-content: center;
           
           img {
-            width: 21px;
-            height: 22px;
+            width: 26px;
+            height: 26px;
             margin: auto;
           }
         }
@@ -95,8 +101,8 @@
           justify-content: center;
           
           img {
-            width: 21px;
-            height: 21px;
+            width: 28px;
+            height: 28px;
           }
         }
       }
@@ -134,7 +140,7 @@
       background-repeat: no-repeat;
       background-position: 0px -400px;
     }
-    
+
     .rightTxt {
       width: 50%;
       // height: 100%;
@@ -315,6 +321,8 @@
 
   #poster {
     @include sectionBasic();
+    background-color: $color_skyblue;
+    height: auto;
 
     h2 {
       @include h2();
@@ -323,9 +331,13 @@
       display: flex;
     }
     .subPoster {
-      display: flex;
       width: 50%;
-      padding: 56px 150px;
+      padding: 56px 94px;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 58px;
+      row-gap: 22px;
+
 
       .subPoster_subTilte {
         display: flex;
@@ -345,17 +357,28 @@
           text-align: center;
         }
       }
-      .subPoster_top {
-        .brawn_posterJp {}
-        .brawn_posterKo {}
+
+      .brawn_posterJp {
+        @include kikiPoster();
       }
-      .subPoster_bottom {
-        .retro_posterJp {}
-        .retro_posterKo {}
+      .brawn_posterKo {
+        @include kikiPoster();
+      }
+      .retro_posterJp {
+        @include kikiPoster();
+      }
+      .retro_posterKo {
+        @include kikiPoster();
       }
     }
     .mainPoster {
       width: 50%;
+      padding: 56px 94px;
+      
+      img {
+        width: 414px;
+        height: 596px;
+      }
     }
   }
 
