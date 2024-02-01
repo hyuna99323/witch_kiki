@@ -6,6 +6,8 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     type: "fraction",
   },
+
+  // 내비게이션 좌우 이동 버튼
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

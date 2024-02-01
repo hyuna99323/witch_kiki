@@ -20,6 +20,7 @@
 }
 
 /* 전체 레이아웃 설정 */
+/* #wrap */
 #wrap {
   width: 100%;
   height: auto;
@@ -126,6 +127,7 @@
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
+  /* 첫번째 줄거리 */
 }
 
 #wrap #plot .leftImg {
@@ -139,10 +141,17 @@
 #wrap #plot .rightTxt {
   width: 50%;
   background-color: #0A4B41;
-  padding: 77px;
+  padding: 77px 150px;
+}
+
+#wrap #plot .rightTxt span {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
 }
 
 #wrap #plot .rightTxt p {
+  padding-top: 10px;
   font-size: 16px;
   color: #fff;
   line-height: 24px;
@@ -151,10 +160,17 @@
 #wrap #plot .leftTxt {
   width: 50%;
   background-color: #1145A2;
-  padding: 67px;
+  padding: 67px 130px;
+}
+
+#wrap #plot .leftTxt span {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
 }
 
 #wrap #plot .leftTxt p {
+  padding-top: 10px;
   font-size: 16px;
   color: #fff;
   line-height: 24px;
@@ -293,36 +309,55 @@
   color: #D71E15;
 }
 
-#wrap #gellery {
+#wrap #gallery {
   height: 100vh;
   padding: 60px 100px;
-  background-image: url(../../img/kiki_gullery.jpeg);
-  background-size: 100% 100%;
+  padding: 0;
 }
 
-#wrap #gellery h2 {
+#wrap #gallery h2 {
   width: 100%;
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+  position: absolute;
   height: 37px;
   color: #fff;
+  margin-top: 60px;
 }
 
-#wrap #gellery .mini_img {
+#wrap #gallery .main_poster {
+  margin-bottom: 80px;
+}
+
+#wrap #gallery #photo {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+#wrap #gallery .mini_img {
   display: flex;
   width: 84px;
   height: 84px;
   gap: 26px;
-  top: 3800px;
+  bottom: 25.3808%;
   left: 20%;
-  position: absolute;
+  position: relative;
+  text-align: center;
 }
 
-#wrap #gellery .mini_img img {
-  width: 100%;
-  height: 100%;
+#wrap #gallery .mini_img li {
+  display: inline-block;
+}
+
+#wrap #gallery .mini_img img {
+  display: block;
+  width: 84px;
+  height: 84px;
+  border: 2px solid #fff;
+  cursor: pointer;
 }
 
 #wrap #poster {

@@ -8,11 +8,13 @@
 // image
 
 
+// section 기본 틀
 @mixin sectionBasic () {
   height: 100vh;
   padding: 60px 100px;
 }
 
+// h2
 @mixin h2 () {
   width: 100%;
   font-size: map-get($map: $font_size, $key: projecttitle);
@@ -21,6 +23,7 @@
   text-align: center;
 }
 
+// h3
 @mixin h3 () {
   width: auto;
   height: 24px;
@@ -30,6 +33,7 @@
   line-height: 24px;
 }
 
+// kiki poster 이미지 크기
 @mixin kikiPoster() {
   width: 186px;
   height: 260px;
