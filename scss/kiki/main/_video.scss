@@ -1,0 +1,30 @@
+// #video
+#video {
+  height: 100vh;
+  padding: 120px 0;
+  background-color: $color_whiteGraly;
+  
+  .video_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .video_title {
+    width: 100%;
+    height: 51px;
+    line-height: 51px;
+    font-size: map-get($map: $font_size, $key: projectsub);
+    font-weight: $font_weight_medium;
+    text-align: center;
+  }
+  .video_decoration {
+    width: 288px;
+    height: 337px;
+    bottom: 300px;
+    left: 1038px;
+    position: relative;
+    background-image: url(../../img/zizi_deco.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+} // --- #video

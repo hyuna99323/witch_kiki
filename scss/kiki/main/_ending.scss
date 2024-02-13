@@ -1,0 +1,81 @@
+// #ending
+#ending {
+  @include sectionBasic ();
+  padding: 59px 100px;
+  background-color: #004;
+  
+  .enjoy {
+    width: 100%;
+    text-align: center;
+    font-size: map-get($map: $font_size, $key: endding);
+    color: $color_red;
+  }
+
+  .prodce {
+    display: flex;
+    margin-top: 54px;
+    justify-content: center;
+    gap: 100px;
+
+    .ghilieImg {
+      img {
+        width: 198px;
+        height: 95px;
+      }
+    } // --- .ghilieImg
+
+    .dawonImg {
+      padding-top: 56px;
+    }
+  } // --- .prodce
+
+  .ott {
+    display: flex;
+    margin-top: 110px;
+    justify-content: center;
+    gap: 95px;
+
+    .netflix {
+      a {
+        display: inline-flex;
+        
+        img {
+          width: 134px;
+          height: auto;
+        }
+      } // --- a
+    } // --- .netflix
+
+    .wavve {
+      display: flex;
+      justify-content: center;
+      
+      a {
+        display: inline-flex;
+        
+        img {
+          width: 131px;
+          height: 27px;
+          margin: auto;
+        }
+      } // --- a
+    } // --- .wavve
+  } // --- .ott
+
+  .familly {
+    position: relative;
+    width: 594px;
+    height: 316px;
+    overflow: hidden;
+    bottom: 58px;
+    left: 746px;
+    
+    img {
+      position: absolute;
+      width: 600px;
+      height: auto;
+      top: 20px;
+      left: 25px;
+    }
+  } // --- .familly
+} // --- #ending

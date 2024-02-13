@@ -1,0 +1,38 @@
+// #famousLine
+#famousLine {
+  height: 320px;
+  display: flex;
+  background-color: $color_black;
+  
+  .famous_kiki {
+    width: 320px;
+    height: 320px;
+    background-image: url(../../img/famous_kiki.png);
+    background-size: 100% 100%;
+  }
+
+  .dialogue {
+    width: 55.5%;
+    padding: 93px 0;
+
+    span {
+      font-family: 'Y_Spotlight';
+      width: 100%;
+      display: block;
+      color: $color_white;
+      font-size: map-get($map: $font_size, $key: dialogue);
+      text-align: center;
+    }
+  } // --- .dialogue
+
+  span:last-child {
+    margin-top: 22px;
+  }
+
+  .famous_parents {
+    width: 320px;
+    height: 318px;
+    background-image: url(../../img//famous_momfam.png);
+    background-size: 100% 100%;
+  }
+} // --- #famousLine

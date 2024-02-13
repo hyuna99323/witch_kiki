@@ -1,0 +1,66 @@
+// #poster
+#poster {
+  @include sectionBasic();
+  background-color: $color_skyblue;
+  height: auto;
+
+  h2 {
+    @include h2();
+  }
+
+  .poster_container {
+    display: flex;
+  }
+
+  .subPoster {
+    width: 50%;
+    padding: 56px 94px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 58px;
+    row-gap: 22px;
+
+    .subPoster_subTilte {
+      display: flex;
+      width: 100%;
+
+      h3 {
+        font-size: map-get($map: $font_size, $key: subtitle);
+        font-weight: $font_weight_regular;
+      }
+
+      .countryJp {
+        width: 50%;
+        text-align: center;
+      }
+
+      .countryKo {
+        width: 50%;
+        text-align: center;
+      }
+    } // --- .subPoster_subTilte
+
+    .brawn_posterJp {
+      @include kikiPoster();
+    }
+    .brawn_posterKo {
+      @include kikiPoster();
+    }
+    .retro_posterJp {
+      @include kikiPoster();
+    }
+    .retro_posterKo {
+      @include kikiPoster();
+    }
+  } // --- .subPoster
+
+  .mainPoster {
+    width: 50%;
+    padding: 56px 94px;
+    
+    img {
+      width: 414px;
+      height: 596px;
+    }
+  } // --- .mainPoster
+} // --- #poster

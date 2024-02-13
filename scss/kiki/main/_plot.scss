@@ -1,0 +1,62 @@
+  // #plot
+  #plot {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+
+    .leftImg {
+      width: 50%;
+      background-image: url(../../img/kiki_green.jpeg);
+      background-size: 100% 1000px;
+      background-repeat: no-repeat;
+      background-position: 0px -400px;
+    }
+
+    /* 첫번째 줄거리 */
+    // 첫번째 줄거리
+    .rightTxt {
+      width: 50%;
+      background-color: $color_green;
+      padding: 77px 150px;
+
+      span {
+        font-size: map-get($map: $font_size, $key: projecttitle);
+        font-weight: $font_weight_bold;
+        color: $color_white;
+      }
+      p {
+        padding-top: 10px;
+        font-size: map-get($map: $font_size, $key: subtitle);
+        color: $color_white;
+        line-height: 24px;
+      }
+    } // --- .rightTxt
+
+    // .leftTxt
+    .leftTxt {
+      width: 50%;
+      background-color: $color_blue;
+      padding: 67px 130px;
+
+      span {
+        font-size: map-get($map: $font_size, $key: projecttitle);
+        font-weight: $font_weight_bold;
+        color: $color_white;
+      }
+
+      p {
+        padding-top: 10px;
+        font-size: map-get($map: $font_size, $key: subtitle);
+        color: $color_white;
+        line-height: 24px;
+      }
+    } // --- .leftTxt
+    .rightImg {
+      width: 50%;
+      // height: 100%;
+      background-image: url(../../img/kiki_plot_blue.jpeg);
+      background-size: 100% 1200px;
+      background-repeat: no-repeat;
+      background-position: 0px -380px;
+    }
+  } // --- #plot

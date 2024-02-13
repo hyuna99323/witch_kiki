@@ -22,7 +22,6 @@ $font_family_score: 'S-CoreDream-3Light';
 $font_weight_regular: 300;
 $font_weight_medium: 500;
 $font_weight_bold: 600;
-// $font_weight_bold: 700;
 $font_weight_bolder: 800;
 $font_weight: (400, 500, 600, 700, 800);
 
@@ -40,6 +39,7 @@ $font_size_pcFull:(
 
 $letter-spacing: (
   title: 0.7em, content: 0.3em, content_kr: 0.1em );
+  
 // device size ================================
 $mobile: 320px;
 $tablet: 600px;

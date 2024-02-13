@@ -1,0 +1,75 @@
+// #recommend
+#recommend {
+  @include sectionBasic();
+  padding: 140px;
+  background-color: $color_puple;
+
+  h2 {
+    @include h2();
+    text-transform: capitalize;
+    color: $color_white;
+  }
+
+  .production {
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+    gap: 30px;
+
+    .ghilie {
+      img {
+        width: 103px;
+        height: 48px;
+      }
+    } // --- .ghilie
+
+    .hayaho {
+      display: block;
+      
+      span {
+        height: 54px;
+        line-height: 89px;
+        display: block;
+        font-size: map-get($map: $font_size, $key: subtitle);
+        color: $color_white;
+      }
+    } // --- .hayaho
+  } // --- .production
+
+  .movie_contanier {
+    height: auto;
+    display: flex;
+    gap: 80px;
+    margin-top: 70px;
+
+    .movie {
+      height: auto;
+
+      .recom_poster {
+        width: 230px;
+        height: 302px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      } // --- .recom_poster
+
+      .movie_title {
+        margin-top: 15px;
+
+        p {
+          font-size: map-get($map: $font_size, $key: subtitle);
+          font-weight: $font_weight_bold;
+          color: $color_white;
+        }
+        
+        p:last-child {
+          margin-top: 5px;
+          font-size: map-get($map: $font_size, $key: content1);
+          font-weight: $font_weight_regular;
+        }
+      } // --- .movie_title
+    } // --- .movie
+  } // --- .movie_contanier
+} // --- #recommend
