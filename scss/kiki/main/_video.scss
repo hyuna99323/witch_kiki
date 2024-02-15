@@ -4,20 +4,44 @@
   padding: 120px 0;
   background-color: $color_whiteGraly;
   
-  .video_content {
+  @at-root .video_content {
     width: 100%;
     display: flex;
     justify-content: center;
+
+    iframe {
+      width: 920px;
+      height: 492px;
+
+      @include mobile() {
+        width: auto;
+        height: auto;
+      }
+
+      @include tablet() {
+        width: 700px;
+        height: 394px;
+      }
+    }
+
+    @include tablet() {
+      width: 700px;
+      margin: auto;
+    }
   }
-  .video_title {
+  @at-root .video_title {
     width: 100%;
     height: 51px;
     line-height: 51px;
     font-size: map-get($map: $font_size, $key: projectsub);
     font-weight: $font_weight_medium;
     text-align: center;
+
+    @include mobile() {
+      font-size: map-get($map: $font_size_m, $key: projectsub);
+    }
   }
-  .video_decoration {
+  @at-root .video_decoration {
     width: 288px;
     height: 337px;
     bottom: 300px;
@@ -26,5 +50,24 @@
     background-image: url(../../img/zizi_deco.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+
+    @include mobile() {
+      width: 80px;
+      height: 100px;
+      bottom: 100px;
+      left: 237px;
+    }
+
+    @include tablet() {
+      width: 200px;
+      height: 246px;
+      bottom: 200px;
+      left: 560px;
+    }
+  }
+  
+  @include mobile() {
+    height: 280px;
+    padding: 40px 0 0;
   }
 } // --- #video

@@ -4,14 +4,24 @@
   display: flex;
   background-color: $color_black;
   
-  .famous_kiki {
+  @at-root .famous_kiki {
     width: 320px;
     height: 320px;
     background-image: url(../../img/famous_kiki.png);
     background-size: 100% 100%;
+
+    @include mobile() {
+      width: 26%;
+      height: 100%;
+    }
+
+    @include tablet() {
+      width: 34%;
+      height: 100%;
+    }
   }
 
-  .dialogue {
+  @at-root .dialogue {
     width: 55.5%;
     padding: 93px 0;
 
@@ -22,17 +32,58 @@
       color: $color_white;
       font-size: map-get($map: $font_size, $key: dialogue);
       text-align: center;
+
+      @include mobile() {
+        font-family: $font_family_score;
+        font-size: map-get($map: $font_size_m, $key: content1);
+      }
+
+      @include tablet() {
+        font-family: $font_family_score;
+        font-size: map-get($map: $font_size_m, $key: projectsub);
+      }
+    }
+
+    @include mobile() {
+      width: 74%;
+      padding: 12px 0 0;
+    }
+
+    @include tablet() {
+      width: auto;
+      padding: 73px 0;
     }
   } // --- .dialogue
 
   span:last-child {
     margin-top: 22px;
+
+    @include mobile() {
+      margin-top: 10px;
+    }
   }
 
-  .famous_parents {
+  @at-root .famous_parents {
     width: 320px;
     height: 318px;
     background-image: url(../../img//famous_momfam.png);
     background-size: 100% 100%;
+
+    @include mobile() {
+      display: none;
+    }
+
+    @include tablet() {
+      width: 34%;
+      height: 100%;
+    }
+  }
+  
+  @include mobile() {
+    height: 100px;
+  }
+
+  @include tablet() {
+    height: 250px;
   }
 } // --- #famousLine

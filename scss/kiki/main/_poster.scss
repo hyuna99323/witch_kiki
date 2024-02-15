@@ -4,15 +4,19 @@
   background-color: $color_skyblue;
   height: auto;
 
+  @include mobile() {
+    display: none;
+  }
+  
   h2 {
     @include h2();
   }
 
-  .poster_container {
+  @at-root .poster_container {
     display: flex;
   }
 
-  .subPoster {
+  @at-root .subPoster {
     width: 50%;
     padding: 56px 94px;
     display: flex;
@@ -52,15 +56,34 @@
     .retro_posterKo {
       @include kikiPoster();
     }
+
+    @include tablet() {
+      height: fit-content;
+      padding: 20px 0;
+      column-gap: 15px;
+    }
   } // --- .subPoster
 
-  .mainPoster {
+  @at-root .mainPoster {
     width: 50%;
     padding: 56px 94px;
     
     img {
       width: 414px;
       height: 596px;
+
+      @include tablet() {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    @include tablet() {
+      padding: 60px 20px;
     }
   } // --- .mainPoster
+
+  @include tablet() {
+    padding: 50px;
+  }
 } // --- #poster

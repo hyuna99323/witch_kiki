@@ -4,11 +4,19 @@
   padding: 59px 100px;
   background-color: #004;
   
-  .enjoy {
+  @at-root .enjoy {
     width: 100%;
     text-align: center;
     font-size: map-get($map: $font_size, $key: endding);
     color: $color_red;
+
+    @include mobile() {
+      font-size: map-get($map: $font_size_m, $key: endding);
+    }
+
+    @include tablet() {
+      font-size: map-get($map: $font_size_t, $key: endding);
+    }
   }
 
   .prodce {
@@ -18,18 +26,68 @@
     gap: 100px;
 
     .ghilieImg {
+      a {
+        display: block;
+        height: 100%;
+      }
+
       img {
         width: 198px;
         height: 95px;
+
+        @include mobile() {
+          width: 74px;
+          height: 36px;
+        }
+
+        @include tablet() {
+          width: 140px;
+          height: auto;
+        }
       }
     } // --- .ghilieImg
 
-    .dawonImg {
+    @at-root .dawonImg {
       padding-top: 56px;
+      
+      a {
+        display: block;
+        height: 100%;
+      }
+
+      img {
+        @include mobile() {
+          width: 84px;
+          height: 14px;
+        }
+
+        @include tablet() {
+          width: 184px;
+          height: 64px;
+        }
+      }
+
+      @include mobile() {
+        padding-top: 14px;
+      }
+
+      @include tablet() {
+        padding-top: 20px;
+      }
+    }
+
+    @include mobile() {
+      margin-top: 15px;
+      gap: 20px;
+    }
+
+    @include tablet() {
+      margin-top: 20px;
+      gap: 50px;
     }
   } // --- .prodce
 
-  .ott {
+  @at-root .ott {
     display: flex;
     margin-top: 110px;
     justify-content: center;
@@ -42,11 +100,20 @@
         img {
           width: 134px;
           height: auto;
+
+          @include mobile() {
+            width: 46px;
+          }
+
+          @include tablet() {
+            width: 120px;
+            height: auto;
+          }
         }
       } // --- a
     } // --- .netflix
 
-    .wavve {
+    @at-root .wavve {
       display: flex;
       justify-content: center;
       
@@ -57,15 +124,37 @@
           width: 131px;
           height: 27px;
           margin: auto;
+
+          @include mobile() {
+            width: 60px;
+            height: 12px;
+            margin: 8px 0;
+          }
+
+          @include tablet() {
+            width: 120px;
+            height: 30px;
+            margin: 20px 0;
+          }
         }
       } // --- a
     } // --- .wavve
+
+    @include mobile() {
+      margin-top: 15px;
+      gap: 20px;
+    }
+
+    @include tablet() {
+      margin-top: 10px;
+      gap: 35px;
+    }
   } // --- .ott
 
-  .familly {
-    position: relative;
+  @at-root .familly {
     width: 594px;
     height: 316px;
+    position: relative;
     overflow: hidden;
     bottom: 58px;
     left: 746px;
@@ -76,6 +165,42 @@
       height: auto;
       top: 20px;
       left: 25px;
+
+      @include mobile() {
+        width: 100%;
+        height: auto;
+        top: 3px;
+        left: 8px;
+      }
+
+      @include tablet() {
+        width: 467px;
+        top: 45px;
+        left: 25px;
+      }
+    }
+    @include mobile() {
+      width: 140px;
+      height: 74px;
+      bottom: 0;
+      left: 160px;
+    }
+
+    @include tablet() {
+      width: 470px;
+      height: 280px;
+      bottom: 0;
+      left: 248px;
     }
   } // --- .familly
+
+  @include mobile() {
+    height: auto;
+    padding: 20px 20px 0;
+  }
+
+  @include tablet() {
+    height: auto;
+    padding: 50px 50px 0;
+  }
 } // --- #ending

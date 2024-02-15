@@ -1,153 +1,230 @@
-  // #headBox
-  #headBox {
+// #headBox
+#headBox {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  box-sizing: border-box;
+
+  @at-root .headinner {
     width: 100%;
-    height: 100vh;
-    top: 0;
-    box-sizing: border-box;
+    height: 70px;
+    display: flex;
+    position: fixed;
+    padding: 13px 100px;
+    z-index: 1000;
 
-    .headinner {
-      width: 100%;
-      height: 70px;
-      display: flex;
-      position: fixed;
-      padding: 13px 100px;
-      z-index: 1000;
+    @at-root .menu_bar {
+      width: 33.3%;
 
-      .menu_bar {
-        width: 33.3%;
-
-        .navbar_overlay {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.7);
-          z-index: 998;
-          opacity: 0;
-          pointer-events: none;
-          transition: opacity 0.1s ease;
-        }
+      @at-root .navbar_overlay {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 998;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.1s ease;
+      }
+      
+      @at-root .gnb {
+        position: fixed;
+        top: 20px;
+        cursor: pointer;
+        color: #000;
         
-        .gnb {
-          position: fixed;
-          top: 20px;
-          cursor: pointer;
-          color: #000;
-          
-          i {
-            font-size: 30px;
-            color: $color_white;
+        i {
+          font-size: 30px;
+          color: $color_white;
+          @include mobile() {
+            font-size: 24px;
           }
-        } // --- .gnb
-        
-        .hurger_back {
-          position: fixed;
-          top: 1.5rem;
-          right: 1.5rem;
-          cursor: pointer;
-          color: #fff;
+        }
 
-          i {
-            font-size: 28px;
-          }
+        @include mobile() {
+          top: auto;
         }
-        .navbar_menu {
-          width: 40%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          padding: 100px 60px;
-          position: fixed;
-          background-color: $color_red;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          transform: translateX(-100%);
-          z-index: 999;
-          transition: transform 0.3s ease;
-          
-          a {
-            margin-left: 10px;
-            margin-bottom: 30px;        
-            position: relative;
-            font-size: map-get($map: $font_size, $key: projectsub);
-            color: $color_white;
-            font-weight: $font_weight_medium;
-            text-decoration: none;
-          }
+
+        @include tablet() {
+          top: auto;
         }
-        .navbar_menu.active {
-          transform: translateX(0);
-        }
-        .navbar_overlay.active {
-          opacity: 1;
-          pointer-events: auto;
+      } // --- .gnb
+      
+      @at-root .hurger_back {
+        position: fixed;
+        top: 1.5rem;
+        right: 1.5rem;
+        cursor: pointer;
+        color: #fff;
+        i {
+          font-size: 28px;
         }
       }
 
-      h1 {
-        width: 33.3%;
-
+      @at-root .navbar_menu {
+        width: 40%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 100px 60px;
+        position: fixed;
+        background-color: $color_red;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transform: translateX(-100%);
+        z-index: 999;
+        transition: transform 0.3s ease;
+        
         a {
-          display: flex;
-          margin: auto;
-          justify-content: center;
+          margin-left: 10px;
+          margin-bottom: 30px;        
+          position: relative;
+          font-size: map-get($map: $font_size, $key: projectsub);
+          color: $color_white;
+          font-weight: $font_weight_medium;
+          text-decoration: none;
+        }
 
-          img {
-            width: 227px;
-            height: 43px;
-          }
-        } // --- a
-      } // --- .h1
-    } // --- .headinner
+        @include mobile() {
+          width: 100%;
+        }
+      }
 
-    .site_rink {
+      @at-root .navbar_menu.active {
+        transform: translateX(0);
+      }
+
+      @at-root .navbar_overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      @include mobile() {
+        width: 19.334%;
+      }
+    }
+
+    @at-root h1 {
       width: 33.3%;
-      display: grid;
+
+      a {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+        img {
+          width: 227px;
+          height: 43px;
+
+          @include mobile() {
+            width: 70.654%;
+            height: auto;
+          }
+
+          @include tablet() {
+            width: 210px;
+            height: auto;
+          }
+        }
+
+        @include tablet() {
+          height: -webkit-fill-available;
+        }
+      } // --- a
+
+      @include mobile() {
+        width: 61.334%;
+      }
+    } // --- .h1
+
+    @include mobile() {
+      height: 50px;
+      padding: 10px;
+    }
+
+    @include tablet() {
+      height: 60px;
+      padding: 13px 50px;
+    }
+  } // --- .headinner
+
+  @at-root .site_rink {
+    width: 33.3%;
+    display: grid;
+    justify-content: end;
+
+    @at-root .rink_img {
+      width: 90px;
+      height: 28px;
+      display: flex;
+      gap: 20px;
       justify-content: end;
 
-      .rink_img {
-        width: 90px;
-        height: 28px;
+      @at-root .ghiblie_site {
+        width: 100%;
         display: flex;
-        gap: 20px;
-        justify-content: end;
+        justify-content: center;
+        
+        img {
+          width: 26px;
+          height: 26px;
+          margin: auto;
 
-        .ghiblie_site {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          
-          img {
-            width: 26px;
-            height: 26px;
-            margin: auto;
+          @include mobile() {
+            width: 24px;
+            height: 24px;
           }
-        } // --- .ghiblie_site
-
-        .twitter_site {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          
-          img {
-            width: 28px;
-            height: 28px;
-          }
-        } // --- .twitter_site
-      } // --- .rink_img
-
-      .site_txt {
-          height: 15px;
-          line-height: 13px;
-          text-align: center;
-
-        span {
-          color: $color_white;
-          font-size: map-get($map: $font_size, $key: subTxt);
-          text-transform: capitalize;
         }
-      } // --- .site_txt
-    } // --- .site_rink
-  } // --- #headBox
+      } // --- .ghiblie_site
+
+      @at-root .twitter_site {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        img {
+          width: 28px;
+          height: 28px;
+
+          @include mobile() {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      } // --- .twitter_site
+
+      @include mobile() {
+        width: auto;
+        height: auto;
+        gap: 10px;
+      }
+    } // --- .rink_img
+
+    @at-root .site_txt {
+      height: 15px;
+      line-height: 13px;
+      text-align: center;
+
+      span {
+        color: $color_white;
+        font-size: map-get($map: $font_size, $key: subTxt);
+        text-transform: capitalize;
+      }
+
+      @include mobile() {
+        display: none;
+      }
+    } // --- .site_txt
+
+    @include mobile() {
+      width: 19.334%;
+    }
+  } // --- .site_rink
+
+  @include mobile() {
+    height: auto;
+  }
+} // --- #headBox

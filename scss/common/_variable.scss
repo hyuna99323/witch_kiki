@@ -26,8 +26,11 @@ $font_weight_bolder: 800;
 $font_weight: (400, 500, 600, 700, 800);
 
 $font_size_m:(
-  title: 25px, pointtitle: 15px, banner: 80px,
-  content1: 14px, pointContent2: 30px, contactemail: 42px);
+  subtitle: 14px, pointcontent: 16px, projecttitle: 15px, subTxt: 10px,
+  projectsub: 18px, content1: 13px, endding: 30px, dialogue: 24px);
+
+$font_size_t:(
+  projecttitle: 20px, endding: 78px);
 
 $font_size:(
   subtitle: 16px, pointcontent: 18px, projecttitle: 30px, subTxt: 12px,

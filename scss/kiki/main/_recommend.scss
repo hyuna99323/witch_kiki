@@ -10,20 +10,20 @@
     color: $color_white;
   }
 
-  .production {
+  @at-root .production {
     display: flex;
     margin-top: 8px;
     justify-content: center;
     gap: 30px;
 
-    .ghilie {
+    @at-root .ghilie {
       img {
         width: 103px;
         height: 48px;
       }
     } // --- .ghilie
 
-    .hayaho {
+    @at-root .hayaho {
       display: block;
       
       span {
@@ -34,18 +34,22 @@
         color: $color_white;
       }
     } // --- .hayaho
+
+    @include mobile() {
+      display: none;
+    }
   } // --- .production
 
-  .movie_contanier {
+  @at-root .movie_contanier {
     height: auto;
     display: flex;
     gap: 80px;
     margin-top: 70px;
 
-    .movie {
+    @at-root .movie {
       height: auto;
 
-      .recom_poster {
+      @at-root .recom_poster {
         width: 230px;
         height: 302px;
 
@@ -53,23 +57,80 @@
           width: 100%;
           height: 100%;
         }
+
+        @include mobile() {
+          width: 134px;
+          height: 172px;
+        }
+
+        @include tablet() {
+          width: 144px;
+          height: 190px;
+        }
       } // --- .recom_poster
 
-      .movie_title {
+      @at-root .movie_title {
         margin-top: 15px;
 
         p {
           font-size: map-get($map: $font_size, $key: subtitle);
           font-weight: $font_weight_bold;
           color: $color_white;
+
+          @include mobile() {
+            font-size: map-get($map: $font_size_m, $key: content1);
+          }
+
+          @include tablet() {
+            font-size: map-get($map: $font_size_m, $key: content1);
+          }
         }
         
         p:last-child {
           margin-top: 5px;
           font-size: map-get($map: $font_size, $key: content1);
           font-weight: $font_weight_regular;
+
+          @include mobile() {
+            font-size: map-get($map: $font_size_m, $key: content1);
+          }
+
+          @include tablet() {
+            font-size: map-get($map: $font_size_m, $key: content1);
+          }
+        }
+
+        @include mobile() {
+          margin-top: 10px;
         }
       } // --- .movie_title
+
+      @include mobile() {
+        width: min-content;
+      }
     } // --- .movie
+
+    @include mobile() {
+      margin-top: 15px;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    @include tablet() {
+      margin-top: 50px;
+      gap: 30px;
+      justify-content: center;
+    }
   } // --- .movie_contanier
+
+  @include mobile() {
+    height: auto;
+    padding: 20px;
+  }
+
+  @include tablet() {
+    height: auto;
+    padding: 50px;
+  }
 } // --- #recommend

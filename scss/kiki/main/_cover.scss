@@ -3,5 +3,13 @@
     img {
       width: 100%;
       height: 100vh;
+
+      @include mobile() {
+        height: 100%;
+      }
+    }
+
+    @include mobile() {
+      height: 190px;
     }
   } // --- #cover

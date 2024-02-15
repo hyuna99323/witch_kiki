@@ -3,12 +3,20 @@
   @include sectionBasic();
   background-color: $color_baige;
 
+  @include mobile() {
+    display: none;
+  }
+
+  @include tablet() {
+    display: none;
+  }
+
   h2 {
     @include h2();
     height: 32px;
   }
 
-  .swiper-container {
+  @at-root .swiper-container {
     width: 100%;
     height: 100%;
   }
@@ -26,7 +34,7 @@
     align-items: center;
     display: block;
     
-    .character_img {
+    @at-root .character_img {
       width: 354px;
       height: 296px;
       margin: auto;
@@ -36,9 +44,14 @@
         height: 100%;
         object-fit: cover;
       }
+
+      @include mobile() {
+        width: auto;
+        height: auto;    
+      }
     }
 
-    .character_txt {
+    @at-root .character_txt {
       width: auto;
       margin: 20px auto 0;
       p {
@@ -51,24 +64,29 @@
         font-size: map-get($map: $font_size, $key: content1);
       }
     }
+
+    @include mobile() {
+      width: 80% !important;
+      height: fit-content;
+    }
   } // --- .swiper-slide
 
-  .swiper-slide:first-child {
+  @at-root .swiper-slide:first-child {
     margin: 30px 15px 0px 70px;
   }
 
-  .swiper-container {
+  @at-root .swiper-container {
     width: 100%;
     height: 300px;
     margin: 20px auto;
   }
 
-  .append-buttons {
+  @at-root .append-buttons {
     text-align: center;
     margin-top: 20px;
   }
 
-  .append-buttons button {
+  @at-root .append-buttons button {
     display: inline-block;
     cursor: pointer;
     border: 1px solid #007aff;
@@ -82,5 +100,9 @@
   
   .swiper-button-next, .swiper-button-prev {
     color: $color_red;
+  }
+
+  @include mobile() {
+    padding: 14px 10px;
   }
 } // --- #character
