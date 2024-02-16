@@ -48,9 +48,9 @@
     height: 84px;
     gap: 26px;
     bottom: 25.3808%;
-    left: 20%;
     position: relative;
     text-align: center;
+    justify-content: center;
 
     li {
       display: inline-block;
@@ -72,25 +72,30 @@
         width: 64px;
         height: 64px;
       }
+
+      @include pcfull() {
+        width: 130px;
+        height: 130px;
+      }
     }
 
     @include mobile() {
       width: 100%;
       height: auto;
-      // flex-wrap: wrap;
-      justify-content: center;
       gap: 8px;
       bottom: 40px;
-      left: 0;
     }
 
     @include tablet() {
       width: 100%;
       height: auto;
       bottom: 105px;
-      left: 0;
-      justify-content: center;
       gap: 20px;
+    }
+
+    @include pcfull() {
+      width: auto;
+      height: auto;
     }
   } // --- .mini_img
 

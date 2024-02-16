@@ -49,6 +49,11 @@
         width: auto;
         height: auto;    
       }
+
+      @include laptop() {
+        width: auto;
+        height: 252px;
+      }
     }
 
     @at-root .character_txt {
@@ -68,6 +73,10 @@
     @include mobile() {
       width: 80% !important;
       height: fit-content;
+    }
+
+    @include pcfull() {
+      margin: 50px 20px 0;
     }
   } // --- .swiper-slide
 
@@ -104,5 +113,9 @@
 
   @include mobile() {
     padding: 14px 10px;
+  }
+
+  @include pcfull() {
+    height: auto;
   }
 } // --- #character

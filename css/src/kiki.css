@@ -309,6 +309,13 @@ h1 a img {
     background-size: 100% 945px;
   }
 }
+@media all and (min-width: 1920px) {
+  .leftImg {
+    height: 50%;
+    background-size: 100% 1180px;
+    background-position: 0px -406px;
+  }
+}
 
 .rightTxt {
   width: 50%;
@@ -330,6 +337,11 @@ h1 a img {
     font-size: 20px;
   }
 }
+@media all and (min-width: 1920px) {
+  .rightTxt span {
+    font-size: 34px;
+  }
+}
 .rightTxt p {
   padding-top: 10px;
   font-size: 16px;
@@ -348,6 +360,13 @@ h1 a img {
     font-size: 14px;
   }
 }
+@media all and (min-width: 1920px) {
+  .rightTxt p {
+    padding-top: 40px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 @media all and (max-width: 679px) {
   .rightTxt {
     height: 50%;
@@ -358,6 +377,12 @@ h1 a img {
   .rightTxt {
     height: 50%;
     padding: 53px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .rightTxt {
+    height: 50%;
+    padding: 150px;
   }
 }
 
@@ -381,6 +406,11 @@ h1 a img {
     font-size: 20px;
   }
 }
+@media all and (min-width: 1920px) {
+  .leftTxt span {
+    font-size: 34px;
+  }
+}
 .leftTxt p {
   padding-top: 10px;
   font-size: 16px;
@@ -399,6 +429,13 @@ h1 a img {
     font-size: 14px;
   }
 }
+@media all and (min-width: 1920px) {
+  .leftTxt p {
+    padding-top: 40px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 @media all and (max-width: 679px) {
   .leftTxt {
     width: 100%;
@@ -409,6 +446,12 @@ h1 a img {
   .leftTxt {
     height: 50%;
     padding: 34px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .leftTxt {
+    height: 50%;
+    padding: 130px;
   }
 }
 
@@ -467,6 +510,12 @@ h1 a img {
     height: 394px;
   }
 }
+@media all and (min-width: 1920px) {
+  .video_content iframe {
+    width: 1200px;
+    height: 674px;
+  }
+}
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .video_content {
     width: 700px;
@@ -485,6 +534,13 @@ h1 a img {
 @media all and (max-width: 679px) {
   .video_title {
     font-size: 18px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .video_title {
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
   }
 }
 
@@ -510,8 +566,21 @@ h1 a img {
   .video_decoration {
     width: 200px;
     height: 246px;
-    bottom: 200px;
-    left: 560px;
+    bottom: 266px;
+    left: 1394px;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .video_decoration {
+    left: 940px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .video_decoration {
+    width: 300px;
+    height: 350px;
+    bottom: 290px;
+    left: 1380px;
   }
 }
 
@@ -584,6 +653,12 @@ h1 a img {
     height: auto;
   }
 }
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .character_img {
+    width: auto;
+    height: 252px;
+  }
+}
 
 .character_txt {
   width: auto;
@@ -603,6 +678,11 @@ h1 a img {
   #character .swiper-slide {
     width: 80% !important;
     height: fit-content;
+  }
+}
+@media all and (min-width: 1920px) {
+  #character .swiper-slide {
+    margin: 50px 20px 0;
   }
 }
 .swiper-slide:first-child {
@@ -638,6 +718,11 @@ h1 a img {
 @media all and (max-width: 679px) {
   #character {
     padding: 14px 10px;
+  }
+}
+@media all and (min-width: 1920px) {
+  #character {
+    height: auto;
   }
 }
 
@@ -703,9 +788,9 @@ h1 a img {
   height: 84px;
   gap: 26px;
   bottom: 25.3808%;
-  left: 20%;
   position: relative;
   text-align: center;
+  justify-content: center;
 }
 .mini_img li {
   display: inline-block;
@@ -729,14 +814,18 @@ h1 a img {
     height: 64px;
   }
 }
+@media all and (min-width: 1920px) {
+  .mini_img img {
+    width: 130px;
+    height: 130px;
+  }
+}
 @media all and (max-width: 679px) {
   .mini_img {
     width: 100%;
     height: auto;
-    justify-content: center;
     gap: 8px;
     bottom: 40px;
-    left: 0;
   }
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
@@ -744,9 +833,13 @@ h1 a img {
     width: 100%;
     height: auto;
     bottom: 105px;
-    left: 0;
-    justify-content: center;
     gap: 20px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .mini_img {
+    width: auto;
+    height: auto;
   }
 }
 
@@ -806,6 +899,11 @@ h1 a img {
   font-size: 16px;
   font-weight: 300;
 }
+@media all and (min-width: 1920px) {
+  .subPoster .subPoster_subTilte h3 {
+    font-size: 20px;
+  }
+}
 .subPoster .subPoster_subTilte .countryJp {
   width: 50%;
   text-align: center;
@@ -828,6 +926,12 @@ h1 a img {
     height: 200px;
   }
 }
+@media all and (min-width: 1920px) {
+  .subPoster .brawn_posterJp {
+    width: 45.5%;
+    height: 43%;
+  }
+}
 .subPoster .brawn_posterKo {
   width: 186px;
   height: 260px;
@@ -840,6 +944,12 @@ h1 a img {
   .subPoster .brawn_posterKo {
     width: 158px;
     height: 200px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .subPoster .brawn_posterKo {
+    width: 45.5%;
+    height: 43%;
   }
 }
 .subPoster .retro_posterJp {
@@ -856,6 +966,12 @@ h1 a img {
     height: 200px;
   }
 }
+@media all and (min-width: 1920px) {
+  .subPoster .retro_posterJp {
+    width: 45.5%;
+    height: 43%;
+  }
+}
 .subPoster .retro_posterKo {
   width: 186px;
   height: 260px;
@@ -870,11 +986,23 @@ h1 a img {
     height: 200px;
   }
 }
+@media all and (min-width: 1920px) {
+  .subPoster .retro_posterKo {
+    width: 45.5%;
+    height: 43%;
+  }
+}
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .subPoster {
     height: fit-content;
     padding: 20px 0;
     column-gap: 15px;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .subPoster {
+    padding: 40px 70px;
+    column-gap: 28px;
   }
 }
 
@@ -892,9 +1020,25 @@ h1 a img {
     height: 100%;
   }
 }
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .mainPoster img {
+    width: 400px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .mainPoster img {
+    width: 100%;
+    height: auto;
+  }
+}
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .mainPoster {
     padding: 60px 20px;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .mainPoster {
+    padding: 40px 70px;
   }
 }
 
@@ -937,7 +1081,7 @@ h1 a img {
   width: 100%;
   display: block;
   color: #fff;
-  font-size: 28px;
+  font-size: 26px;
   text-align: center;
 }
 @media all and (max-width: 679px) {
@@ -952,6 +1096,16 @@ h1 a img {
     font-size: 18px;
   }
 }
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .dialogue span {
+    font-size: 18px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .dialogue span {
+    font-size: 25px;
+  }
+}
 @media all and (max-width: 679px) {
   .dialogue {
     width: 74%;
@@ -962,6 +1116,11 @@ h1 a img {
   .dialogue {
     width: auto;
     padding: 73px 0;
+  }
+}
+@media all and (min-width: 1920px) {
+  .dialogue {
+    width: 66.6%;
   }
 }
 
@@ -1032,6 +1191,12 @@ h1 a img {
   width: 103px;
   height: 48px;
 }
+@media all and (min-width: 1920px) {
+  .ghilie img {
+    width: 133px;
+    height: 78px;
+  }
+}
 
 .hayaho {
   display: block;
@@ -1043,10 +1208,22 @@ h1 a img {
   font-size: 16px;
   color: #fff;
 }
+@media all and (min-width: 1920px) {
+  .hayaho span {
+    height: 85px;
+    font-size: 20px;
+    line-height: 132px;
+  }
+}
 
 @media all and (max-width: 679px) {
   .production {
     display: none;
+  }
+}
+@media all and (min-width: 1920px) {
+  .production {
+    margin-top: 38px;
   }
 }
 
@@ -1079,6 +1256,18 @@ h1 a img {
     height: 190px;
   }
 }
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .recom_poster {
+    width: 215px;
+    height: 297px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .recom_poster {
+    width: 330px;
+    height: 420px;
+  }
+}
 
 .movie_title {
   margin-top: 15px;
@@ -1098,6 +1287,11 @@ h1 a img {
     font-size: 13px;
   }
 }
+@media all and (min-width: 1920px) {
+  .movie_title p {
+    font-size: 18px;
+  }
+}
 .movie_title p:last-child {
   margin-top: 5px;
   font-size: 14px;
@@ -1113,9 +1307,19 @@ h1 a img {
     font-size: 13px;
   }
 }
+@media all and (min-width: 1920px) {
+  .movie_title p:last-child {
+    font-size: 18px;
+  }
+}
 @media all and (max-width: 679px) {
   .movie_title {
     margin-top: 10px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .movie_title {
+    margin-top: 35px;
   }
 }
 
@@ -1140,6 +1344,18 @@ h1 a img {
     justify-content: center;
   }
 }
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .movie_contanier {
+    gap: 47px;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 1920px) {
+  .movie_contanier {
+    margin-top: 120px;
+    gap: 106px;
+  }
+}
 
 @media all and (max-width: 679px) {
   #recommend {
@@ -1151,6 +1367,11 @@ h1 a img {
   #recommend {
     height: auto;
     padding: 50px;
+  }
+}
+@media all and (min-width: 1920px) {
+  #recommend {
+    height: auto;
   }
 }
 
@@ -1174,6 +1395,11 @@ h1 a img {
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .enjoy {
     font-size: 78px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .enjoy {
+    font-size: 100px;
   }
 }
 
@@ -1203,6 +1429,12 @@ h1 a img {
     height: auto;
   }
 }
+@media all and (min-width: 1920px) {
+  #ending .prodce .ghilieImg img {
+    width: 228px;
+    height: 125px;
+  }
+}
 .dawonImg {
   padding-top: 56px;
 }
@@ -1222,6 +1454,11 @@ h1 a img {
     height: 64px;
   }
 }
+@media all and (min-width: 1920px) {
+  .dawonImg img {
+    width: 260px;
+  }
+}
 @media all and (max-width: 679px) {
   .dawonImg {
     padding-top: 14px;
@@ -1230,6 +1467,11 @@ h1 a img {
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .dawonImg {
     padding-top: 20px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .dawonImg {
+    padding-top: 74px;
   }
 }
 
@@ -1243,6 +1485,11 @@ h1 a img {
   #ending .prodce {
     margin-top: 20px;
     gap: 50px;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  #ending .prodce {
+    margin-top: 20px;
   }
 }
 .ott {
@@ -1267,6 +1514,11 @@ h1 a img {
   .ott .netflix a img {
     width: 120px;
     height: auto;
+  }
+}
+@media all and (min-width: 1920px) {
+  .ott .netflix a img {
+    width: 154px;
   }
 }
 .wavve {
@@ -1295,6 +1547,18 @@ h1 a img {
     margin: 20px 0;
   }
 }
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .wavve a img {
+    width: 130px;
+    height: 30px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .wavve a img {
+    width: 150px;
+    height: 38px;
+  }
+}
 
 @media all and (max-width: 679px) {
   .ott {
@@ -1306,6 +1570,11 @@ h1 a img {
   .ott {
     margin-top: 10px;
     gap: 35px;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .ott {
+    margin-top: 60px;
   }
 }
 
@@ -1327,7 +1596,6 @@ h1 a img {
 @media all and (max-width: 679px) {
   .familly img {
     width: 100%;
-    height: auto;
     top: 3px;
     left: 8px;
   }
@@ -1336,6 +1604,13 @@ h1 a img {
   .familly img {
     width: 467px;
     top: 45px;
+    left: 25px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .familly img {
+    width: 700px;
+    top: 20px;
     left: 25px;
   }
 }
@@ -1355,6 +1630,20 @@ h1 a img {
     left: 248px;
   }
 }
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .familly {
+    bottom: -24px;
+    left: 586px;
+  }
+}
+@media all and (min-width: 1920px) {
+  .familly {
+    width: 694px;
+    height: 374px;
+    bottom: -59px;
+    left: 1126px;
+  }
+}
 
 @media all and (max-width: 679px) {
   #ending {
@@ -1366,6 +1655,11 @@ h1 a img {
   #ending {
     height: auto;
     padding: 50px 50px 0;
+  }
+}
+@media all and (min-width: 1920px) {
+  #ending {
+    height: auto;
   }
 }
 

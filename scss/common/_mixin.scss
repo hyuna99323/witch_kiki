@@ -51,6 +51,11 @@
     width: 158px;
     height: 200px;
   }
+
+  @include pcfull() {
+    width: 45.5%;
+    height: 43%;
+  }
 }
 
 // @media query --------------------------------------

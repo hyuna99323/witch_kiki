@@ -42,6 +42,14 @@
         font-family: $font_family_score;
         font-size: map-get($map: $font_size_m, $key: projectsub);
       }
+
+      @include laptop() {
+        font-size: map-get($map: $font_size_m, $key: projectsub);
+      }
+
+      @include pcfull() {
+        font-size: map-get($map: $font_size_pcFull, $key: projectsub);
+      }
     }
 
     @include mobile() {
@@ -52,6 +60,10 @@
     @include tablet() {
       width: auto;
       padding: 73px 0;
+    }
+
+    @include pcfull() {
+      width: 66.6%;
     }
   } // --- .dialogue
 

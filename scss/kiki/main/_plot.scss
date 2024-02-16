@@ -19,6 +19,12 @@
     @include tablet() {
       background-size: 100% 945px;
     }
+
+    @include pcfull() {
+      height: 50%;
+      background-size: 100% 1180px;
+      background-position: 0px -406px;
+    }
   }
 
   /* 첫번째 줄거리 */
@@ -40,6 +46,10 @@
       @include tablet() {
         font-size: map-get($map: $font_size_t, $key: projecttitle);
       }
+
+      @include pcfull() {
+        font-size: map-get($map: $font_size_pcFull, $key: projecttitle);
+      }
     }
 
     p {
@@ -58,6 +68,12 @@
         font-size: map-get($map: $font_size, $key: content1);
         // line-height: 18px;
       }
+
+      @include pcfull() {
+        padding-top: 40px;
+        font-size: map-get($map: $font_size_pcFull, $key: content1);
+        line-height: 30px;
+      }
     }
 
     @include mobile() {
@@ -68,6 +84,11 @@
     @include tablet() {
       height: 50%;
       padding: 53px;
+    }
+
+    @include pcfull() {
+      height: 50%;
+      padding: 150px;
     }
   } // --- .rightTxt
 
@@ -89,6 +110,10 @@
       @include tablet() {
         font-size: map-get($map: $font_size_t, $key: projecttitle);
       }
+
+      @include pcfull() {
+        font-size: map-get($map: $font_size_pcFull, $key: projecttitle);
+      }
     }
 
     p {
@@ -106,6 +131,12 @@
         margin-top: 15px;
         font-size: map-get($map: $font_size, $key: content1);
       }
+
+      @include pcfull() {
+        padding-top: 40px;
+        font-size: map-get($map: $font_size_pcFull, $key: content1);
+        line-height: 30px;
+      }
     }
 
     @include mobile() {
@@ -116,6 +147,11 @@
     @include tablet() {
       height: 50%;
       padding: 34px;
+    }
+
+    @include pcfull() {
+      height: 50%;
+      padding: 130px;
     }
   } // --- .leftTxt
 

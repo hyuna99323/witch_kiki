@@ -20,6 +20,11 @@
       img {
         width: 103px;
         height: 48px;
+
+        @include pcfull() {
+          width: 133px;
+          height: 78px;
+        }
       }
     } // --- .ghilie
 
@@ -32,11 +37,21 @@
         display: block;
         font-size: map-get($map: $font_size, $key: subtitle);
         color: $color_white;
+
+        @include pcfull() {
+          height: 85px;
+          font-size: map-get($map: $font_size_pcFull, $key: subtitle);
+          line-height: 132px;
+        }
       }
     } // --- .hayaho
 
     @include mobile() {
       display: none;
+    }
+
+    @include pcfull() {
+      margin-top: 38px;
     }
   } // --- .production
 
@@ -67,6 +82,16 @@
           width: 144px;
           height: 190px;
         }
+
+        @include laptop() {
+          width: 215px;
+          height: 297px;
+        }
+
+        @include pcfull() {
+          width: 330px;
+          height: 420px;
+        }
       } // --- .recom_poster
 
       @at-root .movie_title {
@@ -84,6 +109,10 @@
           @include tablet() {
             font-size: map-get($map: $font_size_m, $key: content1);
           }
+
+          @include pcfull() {
+            font-size: map-get($map: $font_size_pcFull, $key: content1);
+          }
         }
         
         p:last-child {
@@ -98,10 +127,18 @@
           @include tablet() {
             font-size: map-get($map: $font_size_m, $key: content1);
           }
+
+          @include pcfull() {
+            font-size: map-get($map: $font_size_pcFull, $key: content1);
+          }
         }
 
         @include mobile() {
           margin-top: 10px;
+        }
+
+        @include pcfull() {
+          margin-top: 35px;
         }
       } // --- .movie_title
 
@@ -122,6 +159,16 @@
       gap: 30px;
       justify-content: center;
     }
+
+    @include laptop() {
+      gap: 47px;
+      justify-content: center;
+    }
+
+    @include pcfull() {
+      margin-top: 120px;
+      gap: 106px;
+    }
   } // --- .movie_contanier
 
   @include mobile() {
@@ -132,5 +179,9 @@
   @include tablet() {
     height: auto;
     padding: 50px;
+  }
+
+  @include pcfull() {
+    height: auto;
   }
 } // --- #recommend

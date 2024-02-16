@@ -17,6 +17,10 @@
     @include tablet() {
       font-size: map-get($map: $font_size_t, $key: endding);
     }
+
+    @include pcfull() {
+      font-size: map-get($map: $font_size_pcFull, $key: endding);
+    }
   }
 
   .prodce {
@@ -44,6 +48,11 @@
           width: 140px;
           height: auto;
         }
+
+        @include pcfull() {
+          width: 228px;
+          height: 125px;
+        }
       }
     } // --- .ghilieImg
 
@@ -65,6 +74,10 @@
           width: 184px;
           height: 64px;
         }
+
+        @include pcfull() {
+          width: 260px;
+        }
       }
 
       @include mobile() {
@@ -73,6 +86,10 @@
 
       @include tablet() {
         padding-top: 20px;
+      }
+
+      @include pcfull() {
+        padding-top: 74px;
       }
     }
 
@@ -84,6 +101,10 @@
     @include tablet() {
       margin-top: 20px;
       gap: 50px;
+    }
+
+    @include laptop() {
+      margin-top: 20px;
     }
   } // --- .prodce
 
@@ -108,6 +129,10 @@
           @include tablet() {
             width: 120px;
             height: auto;
+          }
+
+          @include pcfull() {
+            width: 154px;
           }
         }
       } // --- a
@@ -136,6 +161,16 @@
             height: 30px;
             margin: 20px 0;
           }
+
+          @include laptop() {
+            width: 130px;
+            height: 30px;
+          }
+
+          @include pcfull() {
+            width: 150px;
+            height: 38px;
+          }
         }
       } // --- a
     } // --- .wavve
@@ -148,6 +183,10 @@
     @include tablet() {
       margin-top: 10px;
       gap: 35px;
+    }
+
+    @include laptop() {
+      margin-top: 60px;
     }
   } // --- .ott
 
@@ -168,7 +207,6 @@
 
       @include mobile() {
         width: 100%;
-        height: auto;
         top: 3px;
         left: 8px;
       }
@@ -176,6 +214,12 @@
       @include tablet() {
         width: 467px;
         top: 45px;
+        left: 25px;
+      }
+
+      @include pcfull() {
+        width: 700px;
+        top: 20px;
         left: 25px;
       }
     }
@@ -192,6 +236,18 @@
       bottom: 0;
       left: 248px;
     }
+
+    @include laptop() {
+      bottom: -24px;
+      left: 586px;
+    }
+
+    @include pcfull() {
+      width: 694px;
+      height: 374px;
+      bottom: -59px;
+      left: 1126px;
+    }
   } // --- .familly
 
   @include mobile() {
@@ -202,5 +258,9 @@
   @include tablet() {
     height: auto;
     padding: 50px 50px 0;
+  }
+
+  @include pcfull() {
+    height: auto;
   }
 } // --- #ending
