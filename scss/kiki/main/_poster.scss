@@ -68,6 +68,7 @@
     }
 
     @include laptop() {
+      height: fit-content;
       padding: 40px 70px;
       column-gap: 28px;
     }
@@ -87,7 +88,8 @@
       }
 
       @include laptop() {
-        width: 400px;
+        width: 100%;
+        height: 100%;
       }
 
       @include pcfull() {
@@ -97,15 +99,16 @@
     }
 
     @include tablet() {
-      padding: 60px 20px;
+      padding: 60px 2.995% 2.995%;
     }
 
     @include laptop() {
-      padding: 40px 70px;
+      padding: 40px 6.482% 3.704%;
     }
   } // --- .mainPoster
 
   @include tablet() {
+    height: auto;
     padding: 50px;
   }
 } // --- #poster

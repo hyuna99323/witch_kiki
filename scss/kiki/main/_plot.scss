@@ -12,8 +12,8 @@
     background-position: 0px -400px;
 
     @include mobile() {
-      background-size: 258px 500px;
-      background-position: -30px -150px;
+      background-size: 73vw 72vh;
+      background-position: -5vw -16vh;
     }
 
     @include tablet() {
@@ -77,8 +77,8 @@
     }
 
     @include mobile() {
-      height: 50%;
-      padding: 10px;
+      height: 50vh;
+      padding: 4.376%;
     }
 
     @include tablet() {

@@ -48,8 +48,15 @@
   }
 
   @include tablet() {
-    width: 158px;
-    height: 200px;
+    width: 47.306%;
+    height: 28.125vmax;
+    margin: auto;
+  }
+
+  @include laptop() {
+    width: 46.5%;
+    height: 20.1567vmax;
+    margin: auto;
   }
 
   @include pcfull() {

@@ -155,7 +155,7 @@ h1 a img {
 }
 @media all and (max-width: 679px) {
   h1 a img {
-    width: 70.654%;
+    width: 130px;
     height: auto;
   }
 }
@@ -281,7 +281,7 @@ h1 a img {
 }
 @media all and (max-width: 679px) {
   #cover {
-    height: 190px;
+    height: 27vh;
   }
 }
 
@@ -300,8 +300,8 @@ h1 a img {
 }
 @media all and (max-width: 679px) {
   .leftImg {
-    background-size: 258px 500px;
-    background-position: -30px -150px;
+    background-size: 73vw 72vh;
+    background-position: -5vw -16vh;
   }
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
@@ -369,8 +369,8 @@ h1 a img {
 }
 @media all and (max-width: 679px) {
   .rightTxt {
-    height: 50%;
-    padding: 10px;
+    height: 50vh;
+    padding: 4.376%;
   }
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
@@ -497,6 +497,7 @@ h1 a img {
 .video_content iframe {
   width: 920px;
   height: 492px;
+  border: 0;
 }
 @media all and (max-width: 679px) {
   .video_content iframe {
@@ -547,8 +548,8 @@ h1 a img {
 .video_decoration {
   width: 288px;
   height: 337px;
-  bottom: 300px;
-  left: 1038px;
+  bottom: 59.1715%;
+  left: 72.083%;
   position: relative;
   background-image: url(../../img/zizi_deco.png);
   background-size: 100% 100%;
@@ -558,16 +559,16 @@ h1 a img {
   .video_decoration {
     width: 80px;
     height: 100px;
-    bottom: 100px;
-    left: 237px;
+    bottom: 39.834%;
+    left: 74.064%;
   }
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .video_decoration {
     width: 200px;
     height: 246px;
-    bottom: 266px;
-    left: 1394px;
+    bottom: 32.847%;
+    left: 73.959%;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
@@ -579,15 +580,15 @@ h1 a img {
   .video_decoration {
     width: 300px;
     height: 350px;
-    bottom: 290px;
-    left: 1380px;
+    bottom: 37.468%;
+    left: 71.875%;
   }
 }
 
 @media all and (max-width: 679px) {
   #video {
-    height: 280px;
-    padding: 40px 0 0;
+    height: 39.437vh;
+    padding: 9.05% 0 0;
   }
 }
 
@@ -595,16 +596,6 @@ h1 a img {
   height: 100vh;
   padding: 60px 100px;
   background-color: #D7DAC7;
-}
-@media all and (max-width: 679px) {
-  #character {
-    display: none;
-  }
-}
-@media all and (min-width: 680px) and (max-width: 1279px) {
-  #character {
-    display: none;
-  }
 }
 #character h2 {
   width: 100%;
@@ -625,8 +616,8 @@ h1 a img {
 }
 
 #character .swiper-slide {
-  width: 488px;
-  height: 606px;
+  width: 39.355% !important;
+  height: auto;
   background-color: #fff;
   margin: 30px 15px 0;
   padding: 26px 20px;
@@ -653,12 +644,6 @@ h1 a img {
     height: auto;
   }
 }
-@media all and (min-width: 1280px) and (max-width: 1439px) {
-  .character_img {
-    width: auto;
-    height: 252px;
-  }
-}
 
 .character_txt {
   width: auto;
@@ -676,8 +661,26 @@ h1 a img {
 
 @media all and (max-width: 679px) {
   #character .swiper-slide {
-    width: 80% !important;
+    width: 100% !important;
+    margin: auto;
+    height: 630px !important;
+    padding: 20px 10px;
     height: fit-content;
+  }
+}
+@media all and (min-width: 680px) and (max-width: 1279px) {
+  #character .swiper-slide {
+    width: 100% !important;
+    margin: auto;
+    padding: 20px 10px;
+    height: fit-content;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  #character .swiper-slide {
+    width: 45.1855% !important;
+    margin: 2.778% 1.389% 0;
+    padding: 2.408% 1.852% 0;
   }
 }
 @media all and (min-width: 1920px) {
@@ -718,6 +721,11 @@ h1 a img {
 @media all and (max-width: 679px) {
   #character {
     padding: 14px 10px;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  #character {
+    padding: 2.969% 7.813%;
   }
 }
 @media all and (min-width: 1920px) {
@@ -779,13 +787,13 @@ h1 a img {
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
   #gallery #photo {
-    height: 80%;
+    height: 100vh;
   }
 }
 .mini_img {
   display: flex;
-  width: 84px;
-  height: 84px;
+  width: auto;
+  height: auto;
   gap: 26px;
   bottom: 25.3808%;
   position: relative;
@@ -822,24 +830,14 @@ h1 a img {
 }
 @media all and (max-width: 679px) {
   .mini_img {
-    width: 100%;
-    height: auto;
     gap: 8px;
     bottom: 40px;
   }
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .mini_img {
-    width: 100%;
-    height: auto;
     bottom: 105px;
     gap: 20px;
-  }
-}
-@media all and (min-width: 1920px) {
-  .mini_img {
-    width: auto;
-    height: auto;
   }
 }
 
@@ -851,7 +849,6 @@ h1 a img {
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
   #gallery {
-    height: 410px;
     padding: 0;
   }
 }
@@ -922,8 +919,16 @@ h1 a img {
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .subPoster .brawn_posterJp {
-    width: 158px;
-    height: 200px;
+    width: 47.306%;
+    height: 28.125vmax;
+    margin: auto;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .subPoster .brawn_posterJp {
+    width: 46.5%;
+    height: 20.1567vmax;
+    margin: auto;
   }
 }
 @media all and (min-width: 1920px) {
@@ -942,8 +947,16 @@ h1 a img {
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .subPoster .brawn_posterKo {
-    width: 158px;
-    height: 200px;
+    width: 47.306%;
+    height: 28.125vmax;
+    margin: auto;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .subPoster .brawn_posterKo {
+    width: 46.5%;
+    height: 20.1567vmax;
+    margin: auto;
   }
 }
 @media all and (min-width: 1920px) {
@@ -962,8 +975,16 @@ h1 a img {
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .subPoster .retro_posterJp {
-    width: 158px;
-    height: 200px;
+    width: 47.306%;
+    height: 28.125vmax;
+    margin: auto;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .subPoster .retro_posterJp {
+    width: 46.5%;
+    height: 20.1567vmax;
+    margin: auto;
   }
 }
 @media all and (min-width: 1920px) {
@@ -982,8 +1003,16 @@ h1 a img {
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .subPoster .retro_posterKo {
-    width: 158px;
-    height: 200px;
+    width: 47.306%;
+    height: 28.125vmax;
+    margin: auto;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .subPoster .retro_posterKo {
+    width: 46.5%;
+    height: 20.1567vmax;
+    margin: auto;
   }
 }
 @media all and (min-width: 1920px) {
@@ -1001,6 +1030,7 @@ h1 a img {
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
   .subPoster {
+    height: fit-content;
     padding: 40px 70px;
     column-gap: 28px;
   }
@@ -1022,7 +1052,8 @@ h1 a img {
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
   .mainPoster img {
-    width: 400px;
+    width: 100%;
+    height: 100%;
   }
 }
 @media all and (min-width: 1920px) {
@@ -1033,17 +1064,18 @@ h1 a img {
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .mainPoster {
-    padding: 60px 20px;
+    padding: 60px 2.995% 2.995%;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
   .mainPoster {
-    padding: 40px 70px;
+    padding: 40px 6.482% 3.704%;
   }
 }
 
 @media all and (min-width: 680px) and (max-width: 1279px) {
   #poster {
+    height: auto;
     padding: 50px;
   }
 }
@@ -1378,6 +1410,7 @@ h1 a img {
 #ending {
   height: 100vh;
   padding: 60px 100px;
+  height: auto;
   padding: 59px 100px;
   background-color: #004;
 }
@@ -1579,6 +1612,7 @@ h1 a img {
 }
 
 .familly {
+  display: none;
   width: 594px;
   height: 316px;
   position: relative;
@@ -1589,22 +1623,29 @@ h1 a img {
 .familly img {
   position: absolute;
   width: 600px;
-  height: auto;
+  height: -webkit-fill-available;
   top: 20px;
   left: 25px;
 }
 @media all and (max-width: 679px) {
   .familly img {
     width: 100%;
-    top: 3px;
-    left: 8px;
+    top: 4.06%;
+    left: 5.719%;
   }
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .familly img {
-    width: 467px;
-    top: 45px;
-    left: 25px;
+    width: 100%;
+    bottom: -6.71%;
+    left: 5.32%;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .familly img {
+    width: 100%;
+    top: 6.33%;
+    left: 4.21%;
   }
 }
 @media all and (min-width: 1920px) {
@@ -1616,24 +1657,24 @@ h1 a img {
 }
 @media all and (max-width: 679px) {
   .familly {
-    width: 140px;
-    height: 74px;
+    width: 50%;
+    height: 10.423vh;
     bottom: 0;
-    left: 160px;
+    left: 50vw;
   }
 }
 @media all and (min-width: 680px) and (max-width: 1279px) {
   .familly {
-    width: 470px;
-    height: 280px;
+    width: 50%;
+    height: 20vh;
     bottom: 0;
-    left: 248px;
+    left: 50vw;
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1439px) {
   .familly {
-    bottom: -24px;
-    left: 586px;
+    bottom: -3.583%;
+    left: 54.2599%;
   }
 }
 @media all and (min-width: 1920px) {

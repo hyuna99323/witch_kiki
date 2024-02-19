@@ -12,6 +12,7 @@
     iframe {
       width: 920px;
       height: 492px;
+      border: 0; 
 
       @include mobile() {
         width: auto;
@@ -55,8 +56,8 @@
   @at-root .video_decoration {
     width: 288px;
     height: 337px;
-    bottom: 300px;
-    left: 1038px;
+    bottom: 59.1715%;
+    left: 72.083%;
     position: relative;
     background-image: url(../../img/zizi_deco.png);
     background-size: 100% 100%;
@@ -65,15 +66,15 @@
     @include mobile() {
       width: 80px;
       height: 100px;
-      bottom: 100px;
-      left: 237px;
+      bottom: 39.834%;
+      left: 74.064%;
     }
 
     @include tablet() {
       width: 200px;
       height: 246px;
-      bottom: 266px;
-      left: 1394px;
+      bottom: 32.847%;
+      left: 73.959%;
     }
 
     @include laptop() {
@@ -83,13 +84,13 @@
     @include pcfull() {
       width: 300px;
       height: 350px;
-      bottom: 290px;
-      left: 1380px;
+      bottom: 37.468%;
+      left: 71.875%;
     }
   }
   
   @include mobile() {
-    height: 280px;
-    padding: 40px 0 0;
+    height: 39.437vh;
+    padding: 9.05% 0 0;
   }
 } // --- #video

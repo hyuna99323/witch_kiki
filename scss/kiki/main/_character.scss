@@ -3,13 +3,13 @@
   @include sectionBasic();
   background-color: $color_baige;
 
-  @include mobile() {
-    display: none;
-  }
+  // @include mobile() {
+  //   display: none;
+  // }
 
-  @include tablet() {
-    display: none;
-  }
+  // @include tablet() {
+  //   display: none;
+  // }
 
   h2 {
     @include h2();
@@ -22,8 +22,8 @@
   }
 
   .swiper-slide {
-    width: 488px;
-    height: 606px;
+    width: 39.355% !important;
+    height: auto;
     background-color: #fff;
     margin: 30px 15px 0;
     padding: 26px 20px;
@@ -49,11 +49,6 @@
         width: auto;
         height: auto;    
       }
-
-      @include laptop() {
-        width: auto;
-        height: 252px;
-      }
     }
 
     @at-root .character_txt {
@@ -71,8 +66,24 @@
     }
 
     @include mobile() {
-      width: 80% !important;
+      width: 100% !important;
+      margin: auto;
+      height: 630px !important;
+      padding: 20px 10px;
       height: fit-content;
+    }
+
+    @include tablet() {
+      width: 100% !important;
+      margin: auto;
+      padding: 20px 10px;
+      height: fit-content;
+    }
+
+    @include laptop() {
+      width: 45.1855% !important;
+      margin: 2.778% 1.389% 0;
+      padding: 2.408% 1.852% 0;
     }
 
     @include pcfull() {
@@ -113,6 +124,10 @@
 
   @include mobile() {
     padding: 14px 10px;
+  }
+  
+  @include laptop() {
+    padding: 2.969% 7.813%;
   }
 
   @include pcfull() {

@@ -38,14 +38,14 @@
     }
 
     @include tablet() {
-      height: 80%;
+      height: 100vh;
     }
   }
 
   @at-root .mini_img { // 임시코드 자바스크립트 활용예정
     display: flex;
-    width: 84px;
-    height: 84px;
+    width: auto;
+    height: auto;
     gap: 26px;
     bottom: 25.3808%;
     position: relative;
@@ -80,22 +80,13 @@
     }
 
     @include mobile() {
-      width: 100%;
-      height: auto;
       gap: 8px;
       bottom: 40px;
     }
 
     @include tablet() {
-      width: 100%;
-      height: auto;
       bottom: 105px;
       gap: 20px;
-    }
-
-    @include pcfull() {
-      width: auto;
-      height: auto;
     }
   } // --- .mini_img
 
@@ -105,7 +96,6 @@
   }
 
   @include tablet() {
-    height: 410px;
     padding: 0;
   }
 } // --- #gellery

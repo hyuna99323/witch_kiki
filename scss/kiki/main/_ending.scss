@@ -1,6 +1,7 @@
 // #ending
 #ending {
   @include sectionBasic ();
+  height: auto;
   padding: 59px 100px;
   background-color: #004;
   
@@ -191,6 +192,7 @@
   } // --- .ott
 
   @at-root .familly {
+    display: none;
     width: 594px;
     height: 316px;
     position: relative;
@@ -201,20 +203,29 @@
     img {
       position: absolute;
       width: 600px;
-      height: auto;
+      height: -webkit-fill-available;
       top: 20px;
       left: 25px;
 
       @include mobile() {
         width: 100%;
-        top: 3px;
-        left: 8px;
+        // height: -webkit-fill-available;
+        top: 4.06%;
+        left: 5.719%;
       }
 
       @include tablet() {
-        width: 467px;
-        top: 45px;
-        left: 25px;
+        width: 100%;
+        // height: -webkit-fill-available;
+        bottom: -6.71%;
+        left: 5.32%;
+      }
+
+      @include laptop() {
+        width: 100%;
+        // height: -webkit-fill-available;
+        top: 6.33%;
+        left: 4.21%;
       }
 
       @include pcfull() {
@@ -224,22 +235,22 @@
       }
     }
     @include mobile() {
-      width: 140px;
-      height: 74px;
+      width: 50%;
+      height: 10.423vh;
       bottom: 0;
-      left: 160px;
+      left: 50vw;
     }
 
     @include tablet() {
-      width: 470px;
-      height: 280px;
+      width: 50%;
+      height: 20vh;
       bottom: 0;
-      left: 248px;
+      left: 50vw;
     }
 
     @include laptop() {
-      bottom: -24px;
-      left: 586px;
+      bottom: -3.583%;
+      left: 54.2599%;
     }
 
     @include pcfull() {
