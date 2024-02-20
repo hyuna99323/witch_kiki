@@ -3,10 +3,6 @@
   @include sectionBasic();
   background-color: $color_skyblue;
   height: auto;
-
-  @include mobile() {
-    display: none;
-  }
   
   h2 {
     @include h2();
@@ -27,6 +23,7 @@
     .subPoster_subTilte {
       display: flex;
       width: 100%;
+      column-gap: 58px;
 
       h3 {
         font-size: map-get($map: $font_size, $key: subtitle);
@@ -46,19 +43,38 @@
         width: 50%;
         text-align: center;
       }
+
+      @include mobile() {
+        display: none;
+      }
     } // --- .subPoster_subTilte
 
     .brawn_posterJp {
       @include kikiPoster();
+
+      @include mobile() {
+        display: none;
+      }
     }
     .brawn_posterKo {
       @include kikiPoster();
     }
     .retro_posterJp {
       @include kikiPoster();
+
+      @include mobile() {
+        display: none;
+      }
     }
     .retro_posterKo {
       @include kikiPoster();
+    }
+
+    @include mobile() {
+      width: 33.4%;
+      height: fit-content;
+      padding: 0;
+      row-gap: 8px;
     }
 
     @include tablet() {
@@ -82,6 +98,11 @@
       width: 414px;
       height: 596px;
 
+      @include mobile() {
+        width: 100%;
+        height: 100%;
+      }
+
       @include tablet() {
         width: 100%;
         height: 100%;
@@ -98,6 +119,12 @@
       }
     }
 
+    @include mobile() {
+      width: 66.5%;
+      padding: 0;
+      padding-left: 15px;
+    }
+
     @include tablet() {
       padding: 60px 2.995% 2.995%;
     }
@@ -106,6 +133,10 @@
       padding: 40px 6.482% 3.704%;
     }
   } // --- .mainPoster
+
+  @include mobile() {
+    padding: 20px;
+  }
 
   @include tablet() {
     height: auto;

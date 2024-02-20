@@ -46,8 +46,8 @@
       }
 
       @include mobile() {
-        width: auto;
-        height: auto;    
+        width: 280px;
+        height: 200px;    
       }
     }
 
@@ -68,7 +68,7 @@
     @include mobile() {
       width: 100% !important;
       margin: auto;
-      height: 630px !important;
+      height: 550px !important;
       padding: 20px 10px;
       height: fit-content;
     }
