@@ -1,6 +1,7 @@
 // #recommend
 #recommend {
   @include sectionBasic();
+  height: fit-content;
   padding: 140px;
   background-color: $color_puple;
 

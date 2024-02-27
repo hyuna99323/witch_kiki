@@ -3,6 +3,7 @@
     img {
       width: 100%;
       height: 100vh;
+      filter: saturate(70%);
 
       @include mobile() {
         height: 100%;

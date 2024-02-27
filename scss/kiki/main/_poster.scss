@@ -2,7 +2,6 @@
 #poster {
   @include sectionBasic();
   background-color: $color_skyblue;
-  height: auto;
   
   h2 {
     @include h2();
@@ -14,15 +13,17 @@
 
   @at-root .subPoster {
     width: 50%;
-    padding: 56px 94px;
+    height: fit-content;
+    padding: 0px 94px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 58px;
     row-gap: 22px;
 
     .subPoster_subTilte {
-      display: flex;
       width: 100%;
+      height: fit-content;
+      display: flex;
       column-gap: 58px;
 
       h3 {
@@ -92,11 +93,12 @@
 
   @at-root .mainPoster {
     width: 50%;
-    padding: 56px 94px;
+    height: -webkit-fill-available;
+    padding: 0px 94px;
     
     img {
       width: 414px;
-      height: 596px;
+      height: 552px;
 
       @include mobile() {
         width: 100%;

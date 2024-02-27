@@ -1,6 +1,7 @@
 // #character
 #character {
   @include sectionBasic();
+  height: 100%;
   background-color: $color_baige;
 
   // @include mobile() {

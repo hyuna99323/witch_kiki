@@ -300,6 +300,7 @@ h1 a img {
 #cover img {
   width: 100%;
   height: 100vh;
+  filter: saturate(70%);
 }
 
 @media all and (max-width: 679px) {
@@ -315,7 +316,7 @@ h1 a img {
 }
 
 #plot {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   /* 첫번째 줄거리 */
@@ -554,8 +555,8 @@ h1 a img {
 }
 
 .video_content iframe {
-  width: 920px;
-  height: 492px;
+  width: 63.889%;
+  height: 62.437vh;
   border: 0;
 }
 
@@ -611,8 +612,8 @@ h1 a img {
 }
 
 .video_decoration {
-  width: 288px;
-  height: 337px;
+  width: 20%;
+  height: 56.935%;
   bottom: 59.1715%;
   left: 72.083%;
   position: relative;
@@ -664,6 +665,7 @@ h1 a img {
 #character {
   height: 100vh;
   padding: 60px 100px;
+  height: 100%;
   background-color: #D7DAC7;
 }
 
@@ -960,7 +962,6 @@ h1 a img {
   height: 100vh;
   padding: 60px 100px;
   background-color: #B7CAE8;
-  height: auto;
 }
 
 #poster h2 {
@@ -984,7 +985,8 @@ h1 a img {
 
 .subPoster {
   width: 50%;
-  padding: 56px 94px;
+  height: fit-content;
+  padding: 0px 94px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 58px;
@@ -992,8 +994,9 @@ h1 a img {
 }
 
 .subPoster .subPoster_subTilte {
-  display: flex;
   width: 100%;
+  height: fit-content;
+  display: flex;
   column-gap: 58px;
 }
 
@@ -1026,7 +1029,7 @@ h1 a img {
 
 .subPoster .brawn_posterJp {
   width: 186px;
-  height: auto;
+  height: 244px;
 }
 
 .subPoster .brawn_posterJp img {
@@ -1072,7 +1075,7 @@ h1 a img {
 
 .subPoster .brawn_posterKo {
   width: 186px;
-  height: auto;
+  height: 244px;
 }
 
 .subPoster .brawn_posterKo img {
@@ -1112,7 +1115,7 @@ h1 a img {
 
 .subPoster .retro_posterJp {
   width: 186px;
-  height: auto;
+  height: 244px;
 }
 
 .subPoster .retro_posterJp img {
@@ -1158,7 +1161,7 @@ h1 a img {
 
 .subPoster .retro_posterKo {
   width: 186px;
-  height: auto;
+  height: 244px;
 }
 
 .subPoster .retro_posterKo img {
@@ -1223,12 +1226,13 @@ h1 a img {
 
 .mainPoster {
   width: 50%;
-  padding: 56px 94px;
+  height: -webkit-fill-available;
+  padding: 0px 94px;
 }
 
 .mainPoster img {
   width: 414px;
-  height: 596px;
+  height: 552px;
 }
 
 @media all and (max-width: 679px) {
@@ -1424,6 +1428,7 @@ h1 a img {
 #recommend {
   height: 100vh;
   padding: 60px 100px;
+  height: fit-content;
   padding: 140px;
   background-color: #4F4259;
 }
